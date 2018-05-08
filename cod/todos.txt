@@ -1,0 +1,4 @@
+Statistici la citirea datelor? -> CPU, timp de acces
+	- de pe hdd
+	- de pe ssd
+
