@@ -1,3 +1,8 @@
+1) de facut test1 in read data - eventual clasa
+2) de parcurs tot datasetul -> de dalvat dataframeul intr-un fisier
+3) de separat citirea de FFT
+4) de facut ceva cu wav inegale
+
 Statistici la citirea datelor? -> CPU, timp de acces
 	- de pe hdd
 	- de pe ssd
