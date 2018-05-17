@@ -1,0 +1,20 @@
+Abstract
+Introducere
+	Text
+	CRISP-DM metodologia + scurt rezumat despre fiecare faza
+Metodologie
+	Data preparation
+		despre cum au fost colectate datele + exemple cu grafice despre ce e noiseu si cum arata cateva rec
+		-> FFT
+		-> aia cu W
+	Modeling
+		-> CNN love + arhitectura
+	Technologies
+		despre format waw
+		-> Python
+			pandas
+			keras
+			cuda
+Rezultate
+	Interpretare ACC + comparatii cu alea din paper
+Concluzii

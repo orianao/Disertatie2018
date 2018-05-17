@@ -1,0 +1,5 @@
+\contentsline {chapter}{Contents}{5}
+\contentsline {chapter}{I. Introduction}{6}
+\contentsline {chapter}{II. Elemente de criptografie}{7}
+\contentsline {section}{II.1. Criptografie}{7}
+\contentsline {chapter}{VI. Bibliography}{8}

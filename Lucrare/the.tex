@@ -1,0 +1,336 @@
+\documentclass[11pt]{report}
+\usepackage{amsthm}
+\usepackage{amssymb, amsmath}
+\usepackage{array}
+%\usepackage[romanian]{babel}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{index}
+%\usepackage{tikz}
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{definition}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{proposition}
+\newtheorem{proposition}{Proposition}
+
+ \geometry{
+ a4paper,
+ total={160mm,257mm},
+ left=30mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+ 
+\renewcommand{\baselinestretch}{1}
+ 
+\graphicspath{ {Imagini/} }
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+\begin{large}
+Universitatea ``Alexandru Ioan Cuza" din Iaşi\\
+Facultatea de Informatică\\
+\end{large}
+\end{center}
+
+\vspace{50mm}
+
+\begin{center}
+\includegraphics{fii.png}
+\end{center}
+ 
+\vspace{15mm}
+
+\begin{center}
+\begin{Large}
+LUCRARE DE DISERTAŢIE
+\end{Large}
+\\
+\
+\\
+\
+\
+
+\begin{Huge}
+\textbf{Awesome Name}
+\end{Huge}
+
+\
+
+propusă de
+
+\end{center}
+
+\vspace{30mm}
+
+\textbf{Student:} Oriana-Maria Oniciuc
+
+\textbf{Coordonator ştiinţific:} Conf. Dr. Liviu Ciortuz
+\\
+\
+\\
+\
+
+
+\vfill
+
+\begin{center}
+\textbf{Sesiunea:} iulie
+
+2018
+\end{center}
+
+\end{titlepage}
+\newpage
+
+\begin{titlepage}
+
+\begin{center}
+Universitatea ``Alexandru Ioan Cuza" din Iaşi\\
+Facultatea de Informatică\\
+\end{center}
+
+\vspace{85mm}
+ 
+\begin{center}
+\begin{Huge}
+\textbf{Awesome Name}
+\end{Huge}
+\end{center}
+ 
+\vspace{60mm}
+
+\textbf{Student:} Oriana-Maria Oniciuc
+
+\textbf{Coordonator ştiinţific:} Conf. Dr. Liviu Ciortuz
+
+\vfill
+
+\begin{center}
+\textbf{Sesiunea:} iulie
+
+2018
+\end{center}
+
+\end{titlepage}
+\newpage
+
+\
+
+\pagenumbering{arabic}
+
+\vspace{10mm}
+\begin{large}
+\begin{center}
+DECLARAŢIE PRIVIND ORIGINALITATE ŞI RESPECTAREA DREPTURILOR DE AUTOR
+\end{center}
+\end{large}
+
+\vspace{20mm}
+
+Prin prezenta declar că Lucrarea de disertaţie cu titlul ``Awesome Name” este scrisă de mine şi nu a mai fost prezentată niciodată la o altă facultate sau instituţie de învăţământ superior din ţară sau străinătate. De asemenea, declar că toate sursele utilizate, inclusiv cele preluate de pe Internet, sunt indicate în lucrare, cu respectarea regulilor de evitare a plagiatului:
+
+\begin{itemize}
+\item toate fragmentele de text reproduse exact, chiar şi în traducere proprie din altă limbă, sunt scrise între ghilimele şi deţin referinţa precisă a sursei;
+\item reformularea în cuvinte proprii a textelor scrise de către alţi autori deţine referinţa precisă;
+\item codul sursă, imaginile etc. preluate din proiecte open-source sau alte surse sunt utilizate cu respectarea drepturilor de autor şi deţin referinţe precise; 
+\item rezumarea ideilor altor autori precizează referinţa precisă la textul original.
+
+\end{itemize}
+
+\vspace{10mm}
+
+Iaşi,
+\
+
+XX iunie 2018
+\
+
+\begin{flushright}
+Absolvent,
+\\
+
+Oniciuc Oriana-Maria
+\\
+\
+\
+
+\line(1,0){150}
+\
+
+(semnătura în original)
+\end{flushright}
+
+\newpage
+
+\
+
+\vspace{20mm}
+\begin{large}
+\begin{center}
+DECLARAŢIE DE CONSIMŢĂMÂNT
+\end{center}
+\end{large}
+
+\vspace{30mm}
+
+Prin prezenta declar că sunt de acord ca Lucrarea de disertaţie cu titlul ``Awesome Name”, codul sursă al programelor şi celelalte conţinuturi (grafice, multimedia, date de test etc.) care însoţesc această lucrare să fie utilizate în cadrul Facultăţii de Informatică.
+\\
+
+De asemenea, sunt de acord ca Facultatea de Informatică de la Universitatea ``Alexandru Ioan Cuza” din Iaşi să utilizeze, modifice, reproducă şi să distribuie în scopuri necomerciale programele-calculator, format executabil şi sursă, realizate de mine în cadrul prezentei lucrări de disertaţie.
+
+\vspace{20mm}
+
+Iaşi,
+\
+
+XX iunie 2018
+\\
+\
+
+\begin{flushright}
+Absolvent,
+\\
+
+Oniciuc Oriana-Maria
+\\
+\
+\
+
+\line(1,0){150}
+\
+
+(semnătura în original)
+\end{flushright}
+
+\newpage
+
+\vspace{10mm}
+\begin{abstract}
+\
+
+This paper aims is to produce a method that classifies phonocardiograms corresponding to different heart symptoms that are extremely subtle and challenging to separate. The problem is of particular interest to machine learning researchers as it involves classification of audio sample data, where distinguishing between classes of interest is non-trivial. Data is gathered in real-world situations and frequently contains background noise of every conceivable type. Despite its medical significance, to date this is a relatively unexplored application for machine learning.
+\\
+
+Some attempts to segment phonocardiograms (PCG) into heartbeats can be
+found in the literature. The characteristics of the PCG signal and other features
+such as heart sounds S1 and S2 location can be measured more accurately by digital signal processing techniques. Basic frequency content of PCG signal can be
+easily provided using Fast Fourier Transform technique. However, time duration
+and transient variation cannot be resolved just through FFT, and in this case the
+Continuous Wavelet Transform is a more suitable technique to analyze such a signal. The coefficients of the CWT give a graphic representation that is very helpful
+in extracting quantitative analysis simultaneously in time and frequency.
+\\
+
+For the classification task some of the representative work that was done, has been presented in Classifying Heart Sounds Workshop. The teams used the J48 and MLP algorithms (using Weka) to train and classify the computed features, or exploit domain knowledge and compares the features of heartbeat before and after dropping out extra peaks and the smallest interval, used partial least squares regression, neural networks and convolution neural networks. The classification task in this project aims to give an alternative architecture for the convolution neural network proposed in Classification of Heart Sound Recordings using Convolution Neural Network.
+\end{abstract}
+
+\newpage
+%\pagenumbering{gobble}
+%\
+
+%\vspace{60mm}
+%\
+%
+%\textbf{Mulţumiri}
+%\\
+%
+%\
+%
+%Îmi doresc să mulţumesc celor care m-au susţinut în conceperea acestei lucrări. Sunt pe deplin recunoscătoare coordonatorului ştiinţific, conf. dr. Cristian Gaţu. Am învăţat foarte multe de la dumnealui şi m-a ghidat de fiecare dată spre rezultate foarte bune. Vreau să mulţumesc şi întregului corp profesoral care m-a îndrumat în aceşti ani nu doar ca excelenţi dascăli, ci mai ales ca modele pentru o carieră viitoare. De asemenea sunt recunoscătoare dragei mele familii şi tuturor colegilor extraordinari care mi-au fost alături în tot acest timp.
+%
+%\clearpage
+%
+%\newpage
+\pagenumbering{arabic}
+\setcounter{page}{5}
+\addcontentsline{toc}{chapter}{Contents}
+
+\tableofcontents
+
+\newpage
+
+\addcontentsline{toc}{chapter}{I. Introduction}
+\chapter*{I. Introduction}
+
+\
+
+According to the World Health Organization, cardiovascular diseases are the
+number one cause of death globally. These diseases have remained the leading
+causes of death in the last 15 years. Any work done in detecting signs of heart
+disease could therefore have a significant impact on world health.
+\\
+
+Classifying Heart Sounds PASCAL provides us with a dataset that is gathered
+in real-world situations and frequently contains background noise of every con-
+ceivable type, being recorded both in a Hospital environment by a doctor (using a
+digital stethoscope) and at home by the patient (using a mobile device). Success in
+classifying this form of data requires multiples preprocessing of the audio record-
+ings. This part of the research presents an overview of approaches to analysis of
+heart sound signals. The main purpose of this study is developing an automatic
+methodology for identifying systole and diastole in the phonocardiograms and to
+classify the heartbeats in three classes.
+\\
+
+
+\newpage
+
+\addcontentsline{toc}{chapter}{II. Elemente de criptografie}
+\chapter*{II. Elemente de criptografie}
+
+\addcontentsline{toc}{section}{II.1. Criptografie}
+\section*{II.1. Criptografie}
+
+\
+
+Criptografia a apărut pe vremea egiptenilor, cu peste 4000 de ani în urmă. În principal, până la începutul secolului al XX-lea, criptografia s-a ocupat mai ales de şabloane lingvistice. De atunci, accentul s-a mutat pe folosirea extensivă a matematicii, inclusiv a aspectelor de teoria informaţiei, complexitatea algoritmilor, statistică, combinatorică, algebră abstractă şi teoria numerelor. Din punct de vedere lexicografic, cuvântul \textit{criptografie} este format din rădăcinile \textit{cryptos} şi \textit{grafie}.
+
+\begin{center}
+Criptografie = \textit{cryptos}(ascuns) + \textit{grafie}(a scrie)
+\end{center}
+\
+
+Criptografia este o componentă a domeniului securităţii informaţiei şi poate fi definită astfel:
+
+\begin{definition} \textit{Criprografia} este studiul tehnicilor matematice care se ocupă de următoarele aspecte ale securităţii informaţiei: confidenţialitatea, autentificarea, non-repudierea mesajelor şi integritatea datelor.
+\end{definition}
+\
+
+Principalele obiective ale unui sistem criptografic sunt:
+\begin{itemize}
+	\item \textit{Confidenţialitatea}: proprietatea de a păstra secretul informaţiei, astfel încât aceasta să fie utilizată numai de către persoane autorizate.
+	\item \textit{Autentificarea}: proprietatea de a identifica o entitate conform anumitor standarde. Aceasta implică:		
+	\begin{enumerate}
+		\item Autentificarea unei entităţi;
+		\item Autentificarea sursei informaţiei.
+	\end{enumerate}
+	\item \textit{Non-repudierea}: proprietatea care previne negarea unor evenimente anterioare.
+	\item \textit{Integritatea datelor}: proprietatea de a evita orice modificare (inserare, ştergere, substituţie) neautorizată a informaţiei.
+\
+\end{itemize}
+
+
+\newpage
+
+\nocite{*}
+\addcontentsline{toc}{chapter}{VI. Bibliography}
+\bibliographystyle{plain}
+\bibliography{bibliografie}
+
+%% F6 F11 F6 F6 Quick Build
+
+\end{document}

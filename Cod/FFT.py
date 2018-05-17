@@ -9,19 +9,15 @@ import matplotlib.pyplot as plt
 
 topdir = "heartbeat-sounds"
 exten = '.wav'
+file='recordings.csv'
 
-recordings = []
-recordingsDF = {"samples":[], "name":[]}
+recordingsDF = {}
 
 def readData():
 	no=0
 
 	for dirpath, dirnames, files in os.walk(topdir):
-		if no>30:
-			break
 		for name in files:
-			if no>30:
-				break
 			if name.lower().endswith(exten):
 				f = wave.open(os.path.join(dirpath, name))
 				
@@ -34,8 +30,8 @@ def readData():
 				
 				recordings.append((samples,name.split('_')[0]))
 
-				x=np.fft.fft(np.array(samples))
-				freq=np.fft.fftfreq(np.array(samples).shape[-1])
+				x = np.fft.fft(np.array(samples))
+				freq = np.fft.fftfreq(np.array(samples).shape[-1])
 
 				fig = plt.figure()
 				fig.suptitle(name.split('_')[0])
@@ -44,13 +40,15 @@ def readData():
 
 				plt.show(block=False)
 
-				no=no+1
+				no = no + 1
 
 
+def fftData():	
+	recordingsDF=pd.read_csv(file)
+	# fftRecordings = np.fft.fft(np.array(recordingsDF["samples"]))
+	print (len(recordingsDF["samples"]),np.average(recordingsDF["samples"]))
 
 def main ():
-	readData()
-	recordingsDF = pd.DataFrame(data=recordings, columns = ["samples","name"])
-	print(recordingsDF.describe())
-	input()
+	fftData()
+
 main ()
