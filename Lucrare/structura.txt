@@ -1,20 +1,22 @@
 Abstract
 Introducere
-	Text
-	CRISP-DM metodologia + scurt rezumat despre fiecare faza
+	Biologie
+	Alte abordari
 Metodologie
+	CRISP-DM metodologia + scurt rezumat despre fiecare faza
 	Data preparation
-		despre cum au fost colectate datele + exemple cu grafice despre ce e noiseu si cum arata cateva rec
+		despre cum au fost colectate datele + exemple cu grafice despre ce e noiseu' si cum arata cateva rec
 		-> FFT
-		-> aia cu W
+		-> W
 	Modeling
-		-> CNN love + arhitectura
+		-> CNN + arhitectura
 	Technologies
-		despre format waw
+		despre format wav
+			2 seturi cu bitrate si sample rate diferit
 		-> Python
 			pandas
 			keras
 			cuda
 Rezultate
-	Interpretare ACC + comparatii cu alea din paper
+	Interpretare ACC + comparatii cu alea din papers
 Concluzii

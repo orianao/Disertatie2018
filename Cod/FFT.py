@@ -17,7 +17,11 @@ def readData():
 	no=0
 
 	for dirpath, dirnames, files in os.walk(topdir):
+		if no==10:
+			break
 		for name in files:
+			if no == 10:
+				break
 			if name.lower().endswith(exten):
 				f = wave.open(os.path.join(dirpath, name))
 				

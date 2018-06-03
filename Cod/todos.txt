@@ -7,3 +7,7 @@ Statistici la citirea datelor? -> CPU, timp de acces
 	- de pe hdd
 	- de pe ssd
 
+1) normalizarea datelor cu var 1 ? exemplu .py
+2) o limita de la acre sa fie luate in considerare posibile batai
+3) Peak detection -> [xi,...,xj-1]XJ[xj+1,...xk] -> XJ trebuie sa fie mai mare decat cele 2 multimi -> J poz unei sistole/diastole -> care e cardinalul bun pt cele 2 multimi?
+4) from peak to peak -> 
