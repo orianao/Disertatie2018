@@ -49,36 +49,20 @@ def get_peaks(samples):
 
 def add_to_recs(samples, name, n, dirpath='a_a'):
 	global y_train
-	global x_train
 	peaks_list = get_peaks(samples)
+	mapping = {'n' : 0, 'a' : 1, 'e' : 2, 'm' : 3}
 	for i in peaks_list:
-		recordings.append((samples[i - Cframerate : i + Cframerate], name.split('_')[0], dirpath.split('_')[1]))
-		recordings.append((samples[i + 20 - Cframerate : i + 20 + Cframerate], name.split('_')[0], dirpath.split('_')[1]))
-		recordings.append((samples[i - 20 - Cframerate : i - 20 + Cframerate], name.split('_')[0], dirpath.split('_')[1]))
-		x_train.append(samples[i - Cframerate : i + Cframerate])
-		x_train.append(samples[i + 20 - Cframerate : i + 20 + Cframerate])
-		x_train.append(samples[i - 20 - Cframerate : i - 20 + Cframerate])
+		recordings.append(((np.array(samples[i - Cframerate // 2 : i + Cframerate // 2])).real, name.split('_')[0], dirpath.split('_')[1]))
+		recordings.append(((np.array(samples[i + 20 - Cframerate // 2 : i + 20 + Cframerate // 2])).real, name.split('_')[0], dirpath.split('_')[1]))
+		recordings.append(((np.array(samples[i - 20 - Cframerate // 2 : i - 20 + Cframerate // 2])).real, name.split('_')[0], dirpath.split('_')[1]))
+		recordings.append(((np.array(samples[i + 30 - Cframerate // 2 : i + 30 + Cframerate // 2])).real, name.split('_')[0], dirpath.split('_')[1]))
+		recordings.append(((np.array(samples[i - 30 - Cframerate // 2 : i - 30 + Cframerate // 2])).real, name.split('_')[0], dirpath.split('_')[1]))
 		
-		if name.split('_')[0] == "normal":
-			y_train += [0] * 3
-		elif name.split('_')[0] == "artifact":
-			y_train += [1] * 3
-		elif name.split('_')[0] == "extrahls":
-			y_train += [2] * 3
-		else:
-			y_train += [3] * 3
-
-def split_data(x_train, y_train):
-	aux = [*zip(x_train,y_train)]
-	np.random.shuffle(aux)
-	x, y = zip(*aux)
-	p = int(len(x_train) * 0.8)
-	return x[ : p], y[ : p], x[p : ], y[p : ]
-
+		y_train += [mapping[name[0]]] * 5
+		
 
 def readData():
 	no=0
-
 	for dirpath, dirnames, files in os.walk(topdir):
 		for name in files:
 			if name.lower().endswith(exten):
@@ -101,12 +85,21 @@ def readData():
 				#print (no+1, np.std(samples))
 				# samples = samples / np.amax(samples)
 
-				#if no < 15:
-				#	plotit(t,samples,name)
+				if no < 15:
+					plotit(t,samples,name)
 
 				add_to_recs(samples,name,f.getnframes())
 
 				no = no + 1
+
+
+def split_data(x_data, y_data):
+	aux = [*zip(x_data,y_data)]
+	np.random.shuffle(aux)
+	x, y = zip(*aux)
+	p = int(len(x_data) * 0.8)
+	q = int(len(x_data) * 0.85)
+	return x[ : p], y[ : p], x[p : q], y[p : q], x[q : ], y[q : ]
 
 
 if __name__ == '__main__':
@@ -115,12 +108,13 @@ if __name__ == '__main__':
 	print(recordingsDF.head())
 	recordingsDF.to_csv("recordings.csv")
 
-	x_train = np.stack(recordingsDF['samples'].values, axis=0)
-	y_train = keras.utils.to_categorical(y_train)
+	x = np.stack(recordingsDF['samples'].values, axis=0)
+	y = keras.utils.to_categorical(y_train)
 
+	print(y[:20])
 
-	x_train = x_train[ : , : , np.newaxis]
-	x_train, y_train, x_test, y_test = map(np.array, split_data(x_train, y_train))
+	x = x[ : , : , np.newaxis]
+	x_train, y_train, x_valid, y_valid, x_test, y_test = map(np.array, split_data(x, y))
  
 	model = Sequential()
 	model.add(Conv1D(filters=4, 
@@ -128,7 +122,6 @@ if __name__ == '__main__':
 		activation='relu',
 		kernel_regularizer = l2(0.05),
 		input_shape=x_train.shape[1:]))
-	model.add(Conv1D(filters=4, kernel_size=5, activation='relu'))
 	model.add(MaxPool1D(pool_size=5))
 	model.add(Flatten())
 	model.add(Dense(500, activation='relu'))
@@ -136,15 +129,16 @@ if __name__ == '__main__':
 	model.add(Dense(20, activation='relu'))
 	model.add(Dense(4, activation='softmax'))
 
-	model.compile(loss='mse',
+	model.compile(loss='categorical_crossentropy',
 	              optimizer='adam',
 	              metrics=['accuracy'])
 
-
 	model.fit(x_train, y_train,
-	          batch_size=15,
-	          epochs=20,
-	          validation_data=(x_test, y_test))
+	          batch_size=30,
+	          epochs=10,
+	          validation_data=(x_valid, y_valid))
 	score = model.evaluate(x_test, y_test)
 	print('Test loss:', score[0])
-	print('Test accuracy:', score[1])
+	print('Test accuracy:', score[1]*100)
+
+	input()
