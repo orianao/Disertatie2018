@@ -114,7 +114,7 @@ y_data = np_utils.to_categorical(new_labels)
 # In[65]:
 
 
-x_train, x_test, y_train, y_test, train_filenames, test_filenames =     train_test_split(x_data, y_data, df['fname'].values, test_size=0.25)
+x_train, x_test, y_train, y_test, train_filenames, test_filenames = train_test_split(x_data, y_data, df['fname'].values, test_size=0.25)
 
 
 # We now downsample the data with what is in effect a very aggressive low pass filter. This is not needed for computational time, but it seems to improve generalization on this dataset. With more data, we should remove or reduce this step and instead add 2-5 extra convolution layers. The reason this works is probably that what you hear in the stethoscope is almost exclusively low frequency sounds, especially murmurs.
@@ -237,8 +237,7 @@ annealer = LearningRateScheduler(lambda x: 1e-3 * 0.8**x)
 hist = model.fit_generator(batch_generator(x_train, y_train, 8),
                    epochs=30, steps_per_epoch=1000,
                    validation_data=(x_test, y_test),
-                   callbacks=[weight_saver, annealer],
-                   verbose=2)
+                   callbacks=[weight_saver, annealer])
 
 
 # Let's bring back the best weights, in case we overfitted.

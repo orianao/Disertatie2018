@@ -8,11 +8,13 @@ import matplotlib.pyplot as plt
 import audioop
 import keras
 from sklearn.preprocessing import normalize
+from sklearn.model_selection import train_test_split
 from keras.models import Sequential
 from keras.layers import Conv1D, MaxPool1D, GlobalAvgPool1D, Dropout, BatchNormalization, Dense,Flatten
 from keras.optimizers import Adam
 from keras.callbacks import ModelCheckpoint, LearningRateScheduler, EarlyStopping
 from keras.regularizers import l2
+
 
 topdir = "heartbeat-sounds"
 exten = '.wav'
@@ -23,44 +25,56 @@ x_train = []
 y_train = []
 
 
-def plotit(t,samples,name):
+def plotit(t, samples, name):
 	fig = plt.figure()
 	fig.suptitle(name.split('_')[0])
 	the_plot = fig.add_subplot(111)
 	the_plot = plot(t, samples)
 	plt.show(block=False)
 
-def is_peak (x,left,right):
-	if np.amax(left)<x and np.amax(right)<x:
-		return True
-	return False
+
+def is_peak (x, left, right):
+	return np.amax(left) < x and np.amax(right) < x
+
 
 def get_peaks(samples):
 	sol = []
 	std = np.std(samples)
 	for i in range(len(samples)):
-		if i>Cframerate and i<len(samples)-Cframerate and samples[i]>std*2.8:
-			if is_peak(samples[i],samples[i-int(Cframerate/5):i],samples[i+1:i+int(Cframerate/5)]):
+		if i > Cframerate and i < len(samples) - Cframerate and samples[i] > std * 2.8:
+			if is_peak(samples[i], samples[i - Cframerate // 5 : i], samples[i + 1 : i + Cframerate // 5]):
 				sol.append(i)
-	return sol;
+	return sol
 
-def add_to_recs(samples,name,n,dirpath='a_a'):
-	i=1
+
+def add_to_recs(samples, name, n, dirpath='a_a'):
+	global y_train
+	global x_train
 	peaks_list = get_peaks(samples)
 	for i in peaks_list:
-		recordings.append((samples[i-Cframerate:i+Cframerate],name.split('_')[0],dirpath.split('_')[1]))
-		x_train.append(samples[i-Cframerate:i+Cframerate])
+		recordings.append((samples[i - Cframerate : i + Cframerate], name.split('_')[0], dirpath.split('_')[1]))
+		recordings.append((samples[i + 20 - Cframerate : i + 20 + Cframerate], name.split('_')[0], dirpath.split('_')[1]))
+		recordings.append((samples[i - 20 - Cframerate : i - 20 + Cframerate], name.split('_')[0], dirpath.split('_')[1]))
+		x_train.append(samples[i - Cframerate : i + Cframerate])
+		x_train.append(samples[i + 20 - Cframerate : i + 20 + Cframerate])
+		x_train.append(samples[i - 20 - Cframerate : i - 20 + Cframerate])
 		
-		if name.split('_')[0]=="normal":
-			y_train.append(0)
-		elif name.split('_')[0] =="artifact":
-			y_train.append(1)
-		elif name.split('_')[0]=="extrahls":
-			y_train.append(2)
+		if name.split('_')[0] == "normal":
+			y_train += [0] * 3
+		elif name.split('_')[0] == "artifact":
+			y_train += [1] * 3
+		elif name.split('_')[0] == "extrahls":
+			y_train += [2] * 3
 		else:
-			y_train.append(3)
-		
-		i=i+1
+			y_train += [3] * 3
+
+def split_data(x_train, y_train):
+	aux = [*zip(x_train,y_train)]
+	np.random.shuffle(aux)
+	x, y = zip(*aux)
+	p = int(len(x_train) * 0.8)
+	return x[ : p], y[ : p], x[p : ], y[p : ]
+
 
 def readData():
 	no=0
@@ -69,7 +83,7 @@ def readData():
 		for name in files:
 			if name.lower().endswith(exten):
 				filepath = os.path.join(dirpath, name)
-				print(filepath)
+				#print(filepath)
 				f = wave.open(filepath)
 
 				frames = f.readframes(-1)
@@ -84,10 +98,11 @@ def readData():
 				
 				fac_norm = np.linalg.norm(samples)
 				samples = (samples / fac_norm) * 100
-				print (no+1, np.std(samples))
+				#print (no+1, np.std(samples))
 				# samples = samples / np.amax(samples)
 
-				# plotit(t,samples,name)
+				#if no < 15:
+				#	plotit(t,samples,name)
 
 				add_to_recs(samples,name,f.getnframes())
 
@@ -100,41 +115,36 @@ if __name__ == '__main__':
 	print(recordingsDF.head())
 	recordingsDF.to_csv("recordings.csv")
 
-	input()
-
 	x_train = np.stack(recordingsDF['samples'].values, axis=0)
 	y_train = keras.utils.to_categorical(y_train)
 
 
-	x_train = x_train[:,:,np.newaxis]
-
-
+	x_train = x_train[ : , : , np.newaxis]
+	x_train, y_train, x_test, y_test = map(np.array, split_data(x_train, y_train))
+ 
 	model = Sequential()
 	model.add(Conv1D(filters=4, 
-		kernel_size=9, 
+		kernel_size=10, 
 		activation='relu',
 		kernel_regularizer = l2(0.05),
 		input_shape=x_train.shape[1:]))
-	model.add(Conv1D(filters=4, kernel_size=9, activation='relu'))
+	model.add(Conv1D(filters=4, kernel_size=5, activation='relu'))
 	model.add(MaxPool1D(pool_size=5))
-	model.add(Dropout(0.25))
 	model.add(Flatten())
-	model.add(Dense(200, activation='relu'))
-	model.add(Dropout(0.5))
+	model.add(Dense(500, activation='relu'))
+	model.add(Dense(100, activation='relu'))
+	model.add(Dense(20, activation='relu'))
 	model.add(Dense(4, activation='softmax'))
 
-	model.compile(loss=keras.losses.categorical_crossentropy,
-	              optimizer=keras.optimizers.Adam(),
+	model.compile(loss='mse',
+	              optimizer='adam',
 	              metrics=['accuracy'])
 
+
 	model.fit(x_train, y_train,
-	          batch_size=50,
+	          batch_size=15,
 	          epochs=20,
-	          verbose=1,
-	          validation_data=(x_train, y_train))
-	score = model.evaluate(x_train, y_train, verbose=0)
+	          validation_data=(x_test, y_test))
+	score = model.evaluate(x_test, y_test)
 	print('Test loss:', score[0])
 	print('Test accuracy:', score[1])
-
-	input()
-
