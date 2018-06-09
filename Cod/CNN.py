@@ -7,6 +7,7 @@ from pylab import *
 import matplotlib.pyplot as plt
 import audioop
 import keras
+import ast
 from sklearn.preprocessing import normalize
 from sklearn.model_selection import train_test_split
 from keras.models import Sequential
@@ -129,4 +130,4 @@ if __name__ == '__main__':
 	print('Test loss:', score[0])
 	print('Test accuracy:', score[1]*100)
 
-	# input()
+	# 97,7

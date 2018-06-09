@@ -45,11 +45,16 @@ def get_peaks(samples):
 	return sol
 
 
-def add_to_recs(samples, name, n, dirpath='a_a'):
+def add_to_recs(samples, namefrom, n, dirpath='a_a'):
 	global y_train
 	peaks_list = get_peaks(samples)
 	mapping = {'n' : 0, 'a' : 1, 'e' : 2, 'm' : 3}
+	name = namefrom
 	for i in peaks_list:
+		if name[0] == 'a':
+			name = 'n' + namefrom
+		else:
+			name = 'a' + namefrom
 		recordings.append(((np.array(samples[i - Cframerate // 2 : i + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
 		recordings.append(((np.array(samples[i + 20 - Cframerate // 2 : i + 20 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
 		recordings.append(((np.array(samples[i - 20 - Cframerate // 2 : i - 20 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
@@ -112,13 +117,12 @@ if __name__ == '__main__':
 		input_shape=x_train.shape[1:]))
 	model.add(MaxPool1D(pool_size=5))
 	model.add(Flatten())
-	model.add(Dense(500, activation='relu'))
-	model.add(Dense(100, activation='relu'))
-	model.add(Dense(20, activation='relu'))
-	model.add(Dense(4, activation='softmax'))
+	model.add(Dense(600, activation='relu'))
+	model.add(Dense(200, activation='relu'))
+	model.add(Dense(2, activation='softmax'))
 
-	model.compile(loss='categorical_crossentropy',
-	              optimizer='adam',
+	model.compile(optimizer='adam',
+	              loss='poisson',
 	              metrics=['accuracy'])
 
 	model.fit(x_train, y_train,
@@ -129,4 +133,4 @@ if __name__ == '__main__':
 	print('Test loss:', score[0])
 	print('Test accuracy:', score[1]*100)
 
-	# input()
+	# 85,9 -> 90,35
