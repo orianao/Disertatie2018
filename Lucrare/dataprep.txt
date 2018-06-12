@@ -1,0 +1,23 @@
+Data preparation
+
+\addcontentsline{toc}{section}{II.2.1 Data Description and Organisation}
+\section*{II.2.1 Data Description and Organisation}
+
+\
+
+The dataset is split into two sources, A and B. The recordings from the A dataset are gathered from the general public via the iStethoscope Pro iPhone app. The second dataset, B, is collected from a clinic trial in hospitals using the digital stethoscope DigiScope. Most information in heart sounds is contained in the low frequency components, with noise in the higher frequencies.
+\\
+
+The audio files have varying lengths, between 1 second and 30 seconds. (some have been clipped to reduce excessive noise and provide the salient fragment of the sound). The two datasets differ in number, frequency and other proprieties of the .wav files.
+\\
+
+\textbf{Dataset A}
+
+\
+
+Atraining_normal 14Mb 31 files
+Atraining_murmur 17.3Mb 34 files
+Atraining_extrahs 6.9Mb 19 files
+Atraining_artifact 22.5Mb 40 files
+
+\
