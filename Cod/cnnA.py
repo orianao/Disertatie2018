@@ -44,6 +44,23 @@ def get_peaks(samples):
 				sol.append(i)
 	return sol
 
+# def add_to_recs(samples, namefrom, n, dirpath='a_a'):
+# 	global y_train
+# 	peaks_list = get_peaks(samples)
+# 	mapping = {'n' : 0, 'a' : 1, 'e' : 2, 'm' : 3}
+# 	name = namefrom
+# 	for i in range(Cframerate // 2, len(samples) - Cframerate // 2):
+# 		if name[0] == 'a':
+# 			name = 'n' + namefrom
+# 		else:
+# 			name = 'a' + namefrom
+# 		recordings.append(((np.array(samples[i - Cframerate // 2 : i + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
+# 		recordings.append(((np.array(samples[i + 20 - Cframerate // 2 : i + 20 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
+# 		recordings.append(((np.array(samples[i - 20 - Cframerate // 2 : i - 20 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
+# 		recordings.append(((np.array(samples[i + 30 - Cframerate // 2 : i + 30 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
+# 		recordings.append(((np.array(samples[i - 30 - Cframerate // 2 : i - 30 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
+# 		i = i + Cframerate // 2
+
 
 def add_to_recs(samples, namefrom, n, dirpath='a_a'):
 	global y_train
