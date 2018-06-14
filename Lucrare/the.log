@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.6)  11 JUN 2018 03:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.6)  14 JUN 2018 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -105,14 +105,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen112
-\extrarowheight=\dimen113
-\NC@list=\toks26
-\extratabsurround=\skip49
-\backup@length=\skip50
-)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
@@ -121,16 +113,12 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks27
-)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks28
+\KV@toks@=\toks26
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
@@ -145,15 +133,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count100
 \Gm@cntv=\count101
 \c@Gm@tempcnt=\count102
-\Gm@bindingoffset=\dimen114
-\Gm@wd@mp=\dimen115
-\Gm@odd@mp=\dimen116
-\Gm@even@mp=\dimen117
-\Gm@layoutwidth=\dimen118
-\Gm@layoutheight=\dimen119
-\Gm@layouthoffset=\dimen120
-\Gm@layoutvoffset=\dimen121
-\Gm@dimlist=\toks29
+\Gm@bindingoffset=\dimen112
+\Gm@wd@mp=\dimen113
+\Gm@odd@mp=\dimen114
+\Gm@even@mp=\dimen115
+\Gm@layoutwidth=\dimen116
+\Gm@layoutheight=\dimen117
+\Gm@layouthoffset=\dimen118
+\Gm@layoutvoffset=\dimen119
+\Gm@dimlist=\toks27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -172,29 +160,13 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen122
-\Gin@req@width=\dimen123
-)
-(/usr/share/texlive/texmf-dist/tex/latex/index/index.sty
-Package: index 2004/01/20 v4.2beta Improved index support (dmj)
-\@indexbox=\insert199
-\indexproofstyle=\toks30
-)
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
-Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
-
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
-File: uni-global.def 2013/05/13 UCS: Unicode global data
-)
-\uc@secondtry=\count103
-\uc@combtoks=\toks31
-\uc@combtoksb=\toks32
-\uc@temptokena=\toks33
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks34
-\inpenc@posthook=\toks35
+\inpenc@prehook=\toks28
+\inpenc@posthook=\toks29
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -509,14 +481,14 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-\c@theorem=\count104
-\c@definition=\count105
-\c@lemma=\count106
+\c@theorem=\count103
+\c@definition=\count104
+\c@lemma=\count105
 
 
 Package amsthm Warning: Unknown theoremstyle `proposition' on input line 24.
 
-\c@proposition=\count107
+\c@proposition=\count106
 
 Package geometry Warning: Over-specification in `h'-direction.
     `width' (455.24408pt) is ignored.
@@ -524,6 +496,10 @@ Package geometry Warning: Over-specification in `h'-direction.
 
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (731.23582pt) is ignored.
+
+
+LaTeX Warning: Unused global option(s):
+    [a4papper].
 
 (./the.aux)
 \openout1 = `the.aux'.
@@ -577,17 +553,17 @@ LaTeX Font Info:    ... okay on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen124
+\scratchcounter=\count107
+\scratchdimen=\dimen122
 \scratchbox=\box28
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen125
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks37
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen123
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -640,9 +616,6 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
-File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
-)
 <Imagini/fii.png, id=1, 200.75pt x 100.375pt>
 File: Imagini/fii.png Graphic file (type png)
 <use Imagini/fii.png>
@@ -662,30 +635,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--88
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Imagini/fii.png>]
 [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 149.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
- [1]
-Underfull \hbox (badness 10000) in paragraph at lines 192--194
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--238
+Underfull \hbox (badness 10000) in paragraph at lines 141--149
 
  []
 
@@ -702,54 +657,149 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write3
 \openout3 = `the.toc'.
 
- [5
+ [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 272--277
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--288
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+<Imagini/heart.jpg, id=22, 538.1706pt x 295.3434pt>
+File: Imagini/heart.jpg Graphic file (type jpg)
+<use Imagini/heart.jpg>
+Package pdftex.def Info: Imagini/heart.jpg  used on input line 201.
+(pdftex.def)             Requested size: 398.33858pt x 218.60927pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--304
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--308
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
-[6
+[4
 
 ]
-<Imagini/Wiggers_Diagram_2.png, id=33, 1102.1175pt x 844.15375pt>
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
+
+ []
+
+<Imagini/Wiggers_Diagram_2.png, id=26, 1102.1175pt x 844.15375pt>
 File: Imagini/Wiggers_Diagram_2.png Graphic file (type png)
 <use Imagini/Wiggers_Diagram_2.png>
-Package pdftex.def Info: Imagini/Wiggers_Diagram_2.png  used on input line 312.
+Package pdftex.def Info: Imagini/Wiggers_Diagram_2.png  used on input line 222.
 
-(pdftex.def)             Requested size: 426.79134pt x 326.9001pt.
+(pdftex.def)             Requested size: 398.33858pt x 305.10591pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--319
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--325
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
+
+ []
+
+[5 <./Imagini/heart.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
+
+ []
+
+<Imagini/challengeresults.png, id=30, 1003.75pt x 606.265pt>
+File: Imagini/challengeresults.png Graphic file (type png)
+<use Imagini/challengeresults.png>
+Package pdftex.def Info: Imagini/challengeresults.png  used on input line 258.
+(pdftex.def)             Requested size: 412.56496pt x 249.19006pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
+
+ []
+
+[6 <./Imagini/Wiggers_Diagram_2.png>] [7 <./Imagini/challengeresults.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 281--283
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
+
+ []
+
+<Imagini/crisp.png, id=40, 886.31125pt x 805.0075pt>
+File: Imagini/crisp.png Graphic file (type png)
+<use Imagini/crisp.png>
+Package pdftex.def Info: Imagini/crisp.png  used on input line 288.
+(pdftex.def)             Requested size: 227.62204pt x 206.74207pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--300
+
+ []
+
+[8
+
+ <./Imagini/crisp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
 
  []
 
@@ -758,81 +808,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
 
-[7 <./Imagini/Wiggers_Diagram_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 336--338
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--341
+Underfull \hbox (badness 10000) in paragraph at lines 348--350
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--344
-
- []
-
-<Imagini/challengeresults.png, id=38, 1003.75pt x 606.265pt>
-File: Imagini/challengeresults.png Graphic file (type png)
-<use Imagini/challengeresults.png>
-Package pdftex.def Info: Imagini/challengeresults.png  used on input line 346.
-(pdftex.def)             Requested size: 412.56496pt x 249.19006pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--358
-
- []
-
-[8 <./Imagini/challengeresults.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 374--376
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 377--379
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 384--386
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--393
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 398--400
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--407
-
- []
-
-[9
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 412--414
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 419--421
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
 
  []
 
 [10]
-Overfull \hbox (0.41832pt too wide) in paragraph at lines 461--463
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 424.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 424.
+
+Overfull \hbox (0.41832pt too wide) in paragraph at lines 425--426
 []\OT1/cmr/m/it/10.95 Autentificarea\OT1/cmr/m/n/10.95 : pro-pri-etatea de a id
 en-ti-fica o en-ti-tate con-form an-u-mi-tor stan-darde. Aceasta
  []
 
 
-Overfull \hbox (0.82169pt too wide) in paragraph at lines 467--469
+Overfull \hbox (0.82169pt too wide) in paragraph at lines 431--433
 []\OT1/cmr/m/it/10.95 Integritatea datelor\OT1/cmr/m/n/10.95 : pro-pri-etatea d
 e a evita orice mod-i-fi-care (in-ser-are, ^^Xstergere, substitu[]ie)
  []
@@ -845,10 +851,10 @@ e a evita orice mod-i-fi-care (in-ser-are, ^^Xstergere, substitu[]ie)
 
 ]) [14] (./the.aux) ) 
 Here is how much of TeX's memory you used:
- 3724 strings out of 494880
- 49408 string characters out of 6179602
- 115865 words of memory out of 5000000
- 6949 multiletter control sequences out of 15000+600000
+ 3389 strings out of 494880
+ 43641 string characters out of 6179602
+ 106240 words of memory out of 5000000
+ 6629 multiletter control sequences out of 15000+600000
  12913 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  41i,5n,28p,738b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -859,10 +865,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on the.pdf (15 pages, 341828 bytes).
+Output written on the.pdf (15 pages, 782410 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
