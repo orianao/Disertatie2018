@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.6)  15 JUN 2018 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.6)  15 JUN 2018 17:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -837,26 +837,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--340
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--343
-
- []
-
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 348--350
+Underfull \hbox (badness 10000) in paragraph at lines 347--349
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--353
+Underfull \hbox (badness 10000) in paragraph at lines 350--352
 
  []
 
 <Imagini/crispt.png, id=51, 1256.695pt x 741.77126pt>
 File: Imagini/crispt.png Graphic file (type png)
 <use Imagini/crispt.png>
-Package pdftex.def Info: Imagini/crispt.png  used on input line 363.
-(pdftex.def)             Requested size: 426.79134pt x 251.91592pt.
+Package pdftex.def Info: Imagini/crispt.png  used on input line 362.
+(pdftex.def)             Requested size: 460.93456pt x 272.06287pt.
+
+Overfull \hbox (5.69044pt too wide) in paragraph at lines 362--364
+ [][] 
+ []
+
 [11 <./Imagini/crispt.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 381--383
 
@@ -868,21 +868,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--386
  []
 
 [12] [13]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 462.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 463.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 462.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 463.
 
-Overfull \hbox (0.41832pt too wide) in paragraph at lines 463--464
+Overfull \hbox (0.41832pt too wide) in paragraph at lines 464--465
 []\OT1/cmr/m/it/10.95 Autentificarea\OT1/cmr/m/n/10.95 : pro-pri-etatea de a id
 en-ti-fica o en-ti-tate con-form an-u-mi-tor stan-darde. Aceasta
  []
 
 
-Overfull \hbox (0.82169pt too wide) in paragraph at lines 469--471
+Overfull \hbox (0.82169pt too wide) in paragraph at lines 470--472
 []\OT1/cmr/m/it/10.95 Integritatea datelor\OT1/cmr/m/n/10.95 : pro-pri-etatea d
 e a evita orice mod-i-fi-care (in-ser-are, ^^Xstergere, substitu[]ie)
  []
@@ -909,7 +909,7 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on the.pdf (17 pages, 1027551 bytes).
+Output written on the.pdf (17 pages, 1027570 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
