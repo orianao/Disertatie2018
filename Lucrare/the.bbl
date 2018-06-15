@@ -42,20 +42,6 @@ Joan Feigenbaum, Mark~Y. Liberman, and Rebecca~N. Wright.
 \newblock In {\em In Distributed Computing and Cryptography}, pages 161--172.
   American Mathematical Society, 1991.
 
-\bibitem{iacob2005mate}
-Iacob Florin.
-\newblock Curs - matematică, 2005.
-
-\bibitem{goldreich1986rf}
-Oded Goldreich, Shafi Goldwasser, and Silvio Micali.
-\newblock How to construct random functions.
-\newblock {\em J. ACM}, 33(4):792--807, August 1986.
-
-\bibitem{kachitvichyanukul1988hgalgoritm}
-Voratas Kachitvichyanukul and Bruce~W. Schmeiser.
-\newblock Algorithm 668: H2pec: Sampling from the hypergeometric distribution.
-\newblock {\em ACM Trans. Math. Softw.}, 14(4):397--398, December 1988.
-
 \bibitem{flt2015cdc}
 Tiplea~Ferucio Laurentiu.
 \newblock Curs - calculabilitate, decidabilitate şi complexitate, 2015.
@@ -63,10 +49,6 @@ Tiplea~Ferucio Laurentiu.
 \bibitem{flt2015cripto}
 Tiplea~Ferucio Laurentiu.
 \newblock Curs - coduri şi criptografie, 2015.
-
-\bibitem{ponemon2015}
-Ponemon~Institute LLC.
-\newblock 2015 cost of data breach study: Global analysis, 2015.
 
 \bibitem{lopez2001nhgbinomial}
 F.~López-Blázquez and B.~Salamanca-Miño.

@@ -1,13 +1,14 @@
 \contentsline {chapter}{Contents}{3}
 \contentsline {chapter}{I. Introduction}{4}
 \contentsline {section}{I.1. Heart sounds}{4}
-\contentsline {section}{I.2. Previous work}{6}
-\contentsline {chapter}{II. Methodology and research methods}{8}
-\contentsline {section}{II.1. CRISP-DM Methodology}{8}
-\contentsline {section}{II.2. Data preparation}{9}
-\contentsline {section}{II.2.1 Data Description and Organisation}{9}
-\contentsline {section}{II.3. Modeling}{10}
-\contentsline {section}{II.4. Technologies}{10}
-\contentsline {chapter}{III. Results}{11}
-\contentsline {chapter}{IV. Conclusion}{12}
-\contentsline {chapter}{VI. Bibliography}{12}
+\contentsline {section}{I.2. Previous work}{7}
+\contentsline {chapter}{II. Methodology and research methods}{9}
+\contentsline {section}{II.1. CRISP-DM Methodology}{9}
+\contentsline {section}{II.2. Data understanding and preparation}{11}
+\contentsline {subsection}{II.2.1. Data Description and Organisation}{12}
+\contentsline {subsection}{II.2.2. Data}{12}
+\contentsline {section}{II.3. Modeling}{12}
+\contentsline {section}{II.4. Technologies}{12}
+\contentsline {chapter}{III. Results}{14}
+\contentsline {chapter}{IV. Conclusion}{15}
+\contentsline {chapter}{VI. Bibliography}{15}

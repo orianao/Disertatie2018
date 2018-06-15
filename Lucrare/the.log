@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.6)  14 JUN 2018 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.6)  15 JUN 2018 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -674,20 +674,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
-<Imagini/heart.jpg, id=22, 538.1706pt x 295.3434pt>
-File: Imagini/heart.jpg Graphic file (type jpg)
-<use Imagini/heart.jpg>
-Package pdftex.def Info: Imagini/heart.jpg  used on input line 201.
-(pdftex.def)             Requested size: 398.33858pt x 218.60927pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
  []
 
+<Imagini/heart.jpg, id=22, 538.1706pt x 295.3434pt>
+File: Imagini/heart.jpg Graphic file (type jpg)
+<use Imagini/heart.jpg>
+Package pdftex.def Info: Imagini/heart.jpg  used on input line 204.
+(pdftex.def)             Requested size: 398.33858pt x 218.60927pt.
+[4
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
@@ -697,9 +696,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
-[4
 
-]
 Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
@@ -709,166 +706,213 @@ File: Imagini/Wiggers_Diagram_2.png Graphic file (type png)
 <use Imagini/Wiggers_Diagram_2.png>
 Package pdftex.def Info: Imagini/Wiggers_Diagram_2.png  used on input line 222.
 
-(pdftex.def)             Requested size: 398.33858pt x 305.10591pt.
+(pdftex.def)             Requested size: 426.79134pt x 326.9001pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 226--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 226--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--236
+Underfull \hbox (badness 10000) in paragraph at lines 226--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--242
+Underfull \hbox (badness 10000) in paragraph at lines 226--235
 
  []
 
 [5 <./Imagini/heart.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 248--250
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--253
+Underfull \hbox (badness 10000) in paragraph at lines 239--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
 
  []
 
-<Imagini/challengeresults.png, id=30, 1003.75pt x 606.265pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--252
+
+ []
+
+[6 <./Imagini/Wiggers_Diagram_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
+
+ []
+
+<Imagini/challengeresults.png, id=35, 1003.75pt x 606.265pt>
 File: Imagini/challengeresults.png Graphic file (type png)
 <use Imagini/challengeresults.png>
-Package pdftex.def Info: Imagini/challengeresults.png  used on input line 258.
-(pdftex.def)             Requested size: 412.56496pt x 249.19006pt.
+Package pdftex.def Info: Imagini/challengeresults.png  used on input line 268.
+(pdftex.def)             Requested size: 455.24408pt x 274.97217pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--265
+Underfull \hbox (badness 10000) in paragraph at lines 273--275
 
  []
 
-[6 <./Imagini/Wiggers_Diagram_2.png>] [7 <./Imagini/challengeresults.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
+[7 <./Imagini/challengeresults.png>] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--286
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
 
  []
 
-<Imagini/crisp.png, id=40, 886.31125pt x 805.0075pt>
+<Imagini/crisp.png, id=43, 886.31125pt x 805.0075pt>
 File: Imagini/crisp.png Graphic file (type png)
 <use Imagini/crisp.png>
-Package pdftex.def Info: Imagini/crisp.png  used on input line 288.
+Package pdftex.def Info: Imagini/crisp.png  used on input line 297.
 (pdftex.def)             Requested size: 227.62204pt x 206.74207pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--300
-
- []
-
-[8
+[9
 
  <./Imagini/crisp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 305--307
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--314
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--321
+Underfull \hbox (badness 10000) in paragraph at lines 318--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--328
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--335
+Underfull \hbox (badness 10000) in paragraph at lines 328--330
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--350
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 351--353
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--343
 
  []
 
 [10]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 424.
+Underfull \hbox (badness 10000) in paragraph at lines 348--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
+
+ []
+
+<Imagini/crispt.png, id=51, 1256.695pt x 741.77126pt>
+File: Imagini/crispt.png Graphic file (type png)
+<use Imagini/crispt.png>
+Package pdftex.def Info: Imagini/crispt.png  used on input line 363.
+(pdftex.def)             Requested size: 426.79134pt x 251.91592pt.
+[11 <./Imagini/crispt.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 381--383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
+
+ []
+
+[12] [13]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 462.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 424.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 462.
 
-Overfull \hbox (0.41832pt too wide) in paragraph at lines 425--426
+Overfull \hbox (0.41832pt too wide) in paragraph at lines 463--464
 []\OT1/cmr/m/it/10.95 Autentificarea\OT1/cmr/m/n/10.95 : pro-pri-etatea de a id
 en-ti-fica o en-ti-tate con-form an-u-mi-tor stan-darde. Aceasta
  []
 
 
-Overfull \hbox (0.82169pt too wide) in paragraph at lines 431--433
+Overfull \hbox (0.82169pt too wide) in paragraph at lines 469--471
 []\OT1/cmr/m/it/10.95 Integritatea datelor\OT1/cmr/m/n/10.95 : pro-pri-etatea d
 e a evita orice mod-i-fi-care (in-ser-are, ^^Xstergere, substitu[]ie)
  []
 
-[11
+[14
 
-] (./the.bbl [12
+] (./the.bbl [15
 
-] [13
+]) [16
 
-]) [14] (./the.aux) ) 
+] (./the.aux) ) 
 Here is how much of TeX's memory you used:
- 3389 strings out of 494880
- 43641 string characters out of 6179602
- 106240 words of memory out of 5000000
- 6629 multiletter control sequences out of 15000+600000
- 12913 words of font info for 47 fonts, out of 8000000 for 9000
+ 3391 strings out of 494880
+ 43679 string characters out of 6179602
+ 105227 words of memory out of 5000000
+ 6630 multiletter control sequences out of 15000+600000
+ 13220 words of font info for 48 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,5n,28p,738b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on the.pdf (15 pages, 782410 bytes).
+ 41i,5n,28p,700b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+bx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on the.pdf (17 pages, 1027551 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

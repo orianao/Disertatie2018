@@ -33,7 +33,7 @@
  bottom=20mm,
  }
  
-\renewcommand{\baselinestretch}{1}
+\renewcommand{\baselinestretch}{1.25}
  
 \graphicspath{ {Imagini/} }
 
@@ -135,7 +135,7 @@ Facultatea de Informatică\\
 \begin{abstract}
 \
 
-This paper aims is to produce a method that classifies phonocardiograms corresponding to different heart symptoms that are extremely subtle and challenging to separate. The problem is of particular interest to machine learning researchers as it involves classification of audio sample data, where distinguishing between classes of interest is non-trivial. Data is gathered in real-world situations and frequently contains background noise of every conceivable type. Despite its medical significance, to date this is a relatively unexplored application for machine learning.
+This study aims is to produce a method that classifies phonocardiograms corresponding to different heart symptoms that are extremely subtle and challenging to separate. The problem is of particular interest to machine learning researchers as it involves classification of audio sample data, where distinguishing between classes of interest is non-trivial. Data is gathered in real-world situations and frequently contains background noise of every conceivable type. Despite its medical significance, to date this is a relatively unexplored application for machine learning.
 \\
 
 Some attempts to segment phonocardiograms (PCG) into heartbeats can be
@@ -197,15 +197,15 @@ Big companies are interested in medical health activity which is one of the larg
 The cardiac cycle is the performance of the human heart from the beginning of one heartbeat to the next one. In each cardiac cycle, the heart contracts (systole), pushing out the blood and pumping it through the body; this is followed by a relaxation phase (diastole), where the heart fills with blood, as illustrated in the next figure. 
 \\
 
+The atria contracts at the same time, forcing blood through valves into the ventricles. Closing of the atrioventricular valves produces a monosyllabic “lup” sound (S1). Following a brief delay, the ventricles contract at the same time forcing blood through the valves into the aorta and the artery transporting blood to the lungs. Closing of the semilunar valves produces a monosyllabic “dup” sound (S2).
+\\
+
 \begin{figure}[h]
 \includegraphics[width=14cm]{heart.jpg}
 \centering
 \caption{Heart contractions during a cardiac cycle}
 \end{figure}
-
-
-The atria contracts at the same time, forcing blood through valves into the ventricles. Closing of the atrioventricular valves produces a monosyllabic “lup” sound (S1). Following a brief delay, the ventricles contract at the same time forcing blood through the valves into the aorta and the artery transporting blood to the lungs. Closing of the semilunar valves produces a monosyllabic “dup” sound (S2).
-\\
+\
 
 Mechanical vibrations reflect the turbulence that occurs when heart valves close. Traditionally, a stethoscope is used in cardiac auscultation to listen to these sounds that provide important acoustic information regarding the health condition of the heart. 
 \\
@@ -219,10 +219,18 @@ The time-frequency analysis of the PCG signals permits detecting and characteris
 The corelation among the phonocardiogram and the biological phenomenom is presented in the following diagram:
 
 \begin{figure}[h]
-\includegraphics[width=14cm]{Wiggers_Diagram_2.png}
+\includegraphics[width=15cm]{Wiggers_Diagram_2.png}
 \centering
 \caption{The Wiggers Diagram illustrating the cardiac cycle}
 \end{figure}
+\
+\\
+\
+\\
+\
+\\
+\
+\\
 \
 
 \textbf{Heart murmur}
@@ -232,6 +240,8 @@ Heart murmurs are heart sounds produced when blood flows across one of the heart
 \\
 
 Systolic murmurs are due to blood flow through the semilunar valves. They occur at the start of blood ejection — which starts after S1 — and ends with the cessation of the blood flow — which is before S2. Diastolic murmurs start after S2 and end before S1. Many involve stenosis of the atrioventricular valves or regurgitation of the semilunar valves.
+\\
+\
 \\
 
 \textbf{Heart arrhythmia and extra beats}
@@ -255,7 +265,7 @@ The problem is of particular interest to machine learning researchers as it invo
 \\
 
 \begin{figure}[h]
-\includegraphics[width=14.5cm]{challengeresults.png}
+\includegraphics[width=16cm]{challengeresults.png}
 \centering
 \caption{A summary of the results of the three finalists from their approaches}
 \end{figure}
@@ -275,7 +285,6 @@ Other models for classifing the heart sounds can be found [kaggle], where the be
 
 \addcontentsline{toc}{section}{II.1. CRISP-DM Methodology}
 \section*{II.1. CRISP-DM Methodology}
-
 \
 
 Cross-industry standard process for data mining, commonly known by its acronym CRISP-DM, is a data mining process model that describes commonly used approaches used to tackle problems. The current process model for data mining provides an overview of the life cycle of a data mining project. It contains the phases of a project, their respective tasks, and the relationships between these tasks. At this level, it is not possible to identify all relationships. Relationships could exist between any data mining tasks depending on the goals, the background, the interest of the user and on the data. 
@@ -291,57 +300,81 @@ The life cycle of a data mining project consists of six phases, shown in the nex
 \end{figure}
 \
 
+
 \textbf{Business understanding}
 
 \
 
-This initial phase main purpose on understanding the project objectives and requirements from a business perspective, and then converting this knowledge into a data mining problem definition, and a preliminary plan designed to achieve the objectives. A decision model, especially one built using the Decision Model and Notation standard can be used.
+The initial phase main purpose is understanding the project objectives and requirements from a business perspective, analysing the available resources, and then converting this knowledge into a data mining problem definition, and a plan designed to achieve all the objectives. 
+\\
+
+For our study the main objective is to predict with a high rate of trust if a person has arrhythmia or murmurs through a phonocardiogram. The resources available for us are a dataset of different types of recordings, a graphic card GeForce GTX 1050 (2GB) and a Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz. Our initial goal would be to get a minimum of 70\% accuracy.
 \\
 
 \textbf{Data understanding}
 
 \
 
-The data understanding phase starts with an initial data collection and proceeds with activities in order to get familiar with the data, to identify data quality problems, to discover first insights into the data, or to detect interesting subsets to form hypotheses for hidden information.
+The data understanding phase starts with an initial data collection and proceeds with activities that can give insides about the data, to identify data quality problems, or to detect interesting subsets to form hypotheses for hidden information.
+\\
+
+Our dataset has been gathered from two sources. All the files are .wav files with lengths between 1 second and 30 seconds and two frequencies: 44100 Hz and 4000 Hz. We also have examples of recordings thare are not heartbeats, but artifacts.
 \\
 
 \textbf{Data preparation}
 
 \
 
-The data preparation phase covers all activities to construct the final dataset (data that will be fed into the modeling tool(s)) from the initial raw data. Data preparation tasks are likely to be performed multiple times, and not in any prescribed order. Tasks include table, record, and attribute selection as well as transformation and cleaning of data for modeling tools.
+This phase covers all activities to construct the final dataset (data that will be used for creating the model) from the initial raw data. Tasks representative for the data preparation phase include table, record, and attribute selection as well as transformation and cleaning of data for modeling tools.
+\\
+
+In this phase we normalised each recording using the Frobenius norm and after this, using a peak detection algorithm, we identfied the sounds S1 and S2 in each recording. We searched for the peaks starting with second 0,5 and ended at len(rec) - 0,5 seconds. For each peak we chunked a 1 second peice of the record, obtaining multiple one second recordings. In order to get a better accuracy through multiplying the data we used a sliding window technique.
 \\
 
 \textbf{Modeling}
 
 \
 
-In this phase, various modeling techniques are selected and applied, and their parameters are calibrated to optimal values. Typically, there are several techniques for the same data mining problem type. Some techniques have specific requirements on the form of data. Therefore, stepping back to the data preparation phase is often needed.
+In this phase, various modeling techniques are selected and applied, and their parameters are calibrated to optimal values. Usualy, there are several techniques for the same data mining problem type. Some techniques have specific requirements on the form of data.
+\\
+
+The models we created are one Convolutional Neural Networks that classifies each record in one of the four classes, and the second model uses a Multi-Task Learning technique in Convolutional Neural Networks.
 \\
 
 \textbf{Evaluation}
 
 \
 
-At this stage in the project you have built a model (or models) that appears to have high quality, from a data analysis perspective. Before proceeding to final deployment of the model, it is important to more thoroughly evaluate the model, and review the steps executed to construct the model, to be certain it properly achieves the business objectives. A key objective is to determine if there is some important business issue that has not been sufficiently considered. At the end of this phase, a decision on the use of the data mining results should be reached.
+At this stage in the project you have built a model (or models) that appears to have good quality, from a data analysis perspective. Before proceeding to final deployment of the model, it is important to evaluate the model, and review the steps executed to construct the model, to be certain it achieves the business objectives.
+\\
+
+The metrics we used for evaluating the models is te accuracy of the test dataset. Other metrics that we used are the validation dataset accuracy, the value of the loss function, the sensitivity and the specificity.
 \\
 
 \textbf{Deployment}
 
 \
 
-Creation of the model is generally not the end of the project. Even if the purpose of the model is to increase knowledge of the data, the knowledge gained will need to be organized and presented in a way that is useful to the customer. Depending on the requirements, the deployment phase can be as simple as generating a report or as complex as implementing a repeatable data scoring (e.g. segment allocation) or data mining process. In many cases it will be the customer, not the data analyst, who will carry out the deployment steps. Even if the analyst deploys the model it is important for the customer to understand up front the actions which will need to be carried out in order to actually make use of the created models.
-\\
+Creation of the model is not the end of the project. Even if the purpose of the model is to increase knowledge of the data, the knowledge gained will need to be organized and presented in a way that is useful to the users. Depending on the requirements, the deployment phase can be as simple as generating a report or as complex as implementing an application from scratch. In many cases it will be the customer who will carry out the deployment steps. 
 
 
 
-\addcontentsline{toc}{section}{II.2. Data preparation}
-\section*{II.2. Data preparation}
+\begin{figure}[h]
+\includegraphics[width=15cm]{crispt.png}
+\centering
+\caption{Generic tasks and outputs of the CRISP-DM model}
+\end{figure}
+\
+
+In the next sections we will detaliate some of the most important and time consuming phases of the project, detaliating the mathemathical and biological backgroung for each stage.
+
+\addcontentsline{toc}{section}{II.2. Data understanding and preparation}
+\section*{II.2. Data understanding and preparation}
 
 \
 
-\addcontentsline{toc}{section}{II.2.1 Data Description and Organisation}
-\section*{II.2.1 Data Description and Organisation}
+\addcontentsline{toc}{subsection}{II.2.1. Data Description and Organisation}
+\subsection*{II.2.1. Data Description and Organisation}
 
 \
 
@@ -389,6 +422,11 @@ Btraining\_murmur 5.3Mb 95 files
 Btraining\_extrasystole 1.9Mb 46 files
 \
 
+
+\addcontentsline{toc}{subsection}{II.2.2. Data}
+\subsection*{II.2.2. Data}
+
+\
 
 \addcontentsline{toc}{section}{II.3. Modeling}
 \section*{II.3. Modeling}
