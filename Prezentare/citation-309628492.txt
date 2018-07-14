@@ -1,0 +1,1 @@
+Zhang, Wenjie & Han, Jiqing & Deng, Shi-wen. (2017). Heart sound classification based on scaled spectrogram and partial least squares regression. Biomedical Signal Processing and Control. 32. 10.1016/j.bspc.2016.10.004. 

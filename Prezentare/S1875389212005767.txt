@@ -1,0 +1,10 @@
+Ruihu Wang,
+AdaBoost for Feature Selection, Classification and Its Relation with SVM, A Review,
+Physics Procedia,
+Volume 25,
+2012,
+Pages 800-807,
+ISSN 1875-3892,
+https://doi.org/10.1016/j.phpro.2012.03.160.
+(http://www.sciencedirect.com/science/article/pii/S1875389212005767)
+Keywords: AdaBoost; Feature selection; Cascaded; Support vector machine

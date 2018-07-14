@@ -1,14 +1,38 @@
-\contentsline {chapter}{Contents}{3}
-\contentsline {chapter}{I. Introduction}{4}
-\contentsline {section}{I.1. Heart sounds}{4}
-\contentsline {section}{I.2. Previous work}{7}
-\contentsline {chapter}{II. Methodology and research methods}{9}
-\contentsline {section}{II.1. CRISP-DM Methodology}{9}
-\contentsline {section}{II.2. Data understanding and preparation}{11}
-\contentsline {subsection}{II.2.1. Data Description and Organisation}{12}
-\contentsline {subsection}{II.2.2. Data}{12}
-\contentsline {section}{II.3. Modeling}{12}
-\contentsline {section}{II.4. Technologies}{12}
-\contentsline {chapter}{III. Results}{14}
-\contentsline {chapter}{IV. Conclusion}{15}
-\contentsline {chapter}{VI. Bibliography}{15}
+\contentsline {chapter}{Contents}{5}
+\contentsline {chapter}{I. Introduction}{7}
+\contentsline {section}{I.1. Heart sounds}{7}
+\contentsline {section}{I.2. Previous work}{10}
+\contentsline {chapter}{II. Methodology and research methods}{12}
+\contentsline {section}{II.1. CRISP-DM Methodology}{12}
+\contentsline {section}{II.2. Data understanding and preparation}{15}
+\contentsline {subsection}{II.2.1. Data Description and Selection}{15}
+\contentsline {subsection}{II.2.2. Preprocess Data}{15}
+\contentsline {subsubsection}{II.2.2.a. Frames retrieval}{16}
+\contentsline {subsubsection}{II.2.2.b. Ploting}{16}
+\contentsline {subsubsection}{II.2.2.c. Peak Analysis}{19}
+\contentsline {subsection}{II.2.3. Data Transformations}{21}
+\contentsline {subsubsection}{II.2.3.a. $L^2$ norm}{21}
+\contentsline {subsubsection}{II.2.3.b. Sliding window for data selection}{23}
+\contentsline {subsubsection}{II.2.3.c. Feature extraction}{24}
+\contentsline {section}{II.3. Classification Models}{27}
+\contentsline {subsection}{II.3.1. Multi-Class CNN}{27}
+\contentsline {subsection}{II.3.2. Multi-Task Learning}{28}
+\contentsline {subsubsection}{II.3.2.a. Neural Network Normal heartbeat}{28}
+\contentsline {subsubsection}{II.3.2.b. Neural Network Murmur heartbeat}{29}
+\contentsline {subsubsection}{II.3.2.c. AdaBoost Classifier}{30}
+\contentsline {section}{II.4. Technologies}{31}
+\contentsline {subsection}{II.4.1. WAV}{31}
+\contentsline {subsection}{II.4.2. Python}{31}
+\contentsline {subsubsection}{II.4.2.a. Sklearn}{32}
+\contentsline {subsubsection}{II.4.2.b. Keras}{32}
+\contentsline {subsection}{II.4.3. CUDA}{32}
+\contentsline {chapter}{III. Results}{33}
+\contentsline {section}{III.1. Feature selection}{33}
+\contentsline {section}{III.2. Classification results}{34}
+\contentsline {subsection}{III.2.1. Multi-class CNN}{35}
+\contentsline {subsection}{III.2.2. Normal heartbeats identification}{35}
+\contentsline {subsection}{III.2.3. Murmur heartbeats identification}{35}
+\contentsline {subsection}{III.2.4. Extrastole heartbeats identification}{36}
+\contentsline {section}{III.3. Contributions}{37}
+\contentsline {chapter}{IV. Conclusion}{38}
+\contentsline {chapter}{Bibliography}{38}

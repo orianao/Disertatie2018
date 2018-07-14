@@ -18,7 +18,7 @@ from keras.regularizers import l2
 
 topdir = "heartbeat-sounds"
 exten = '.wav'
-Cframerate = 44100
+Cframerate = 8000
 
 recordings = []
 
@@ -39,28 +39,28 @@ def get_peaks(samples):
 	sol = []
 	std = np.std(samples)
 	for i in range(len(samples)):
-		if i > Cframerate and i < len(samples) - Cframerate and samples[i] > std * 2.8:
+		if i > (Cframerate + 31) and i < len(samples) - (Cframerate + 31) and samples[i] > std * 2.8:
 			if is_peak(samples[i], samples[i - Cframerate // 5 : i], samples[i + 1 : i + Cframerate // 5]):
 				sol.append(i)
 	return sol
 
 
-def add_to_recs(samples, namefrom, n, dirpath='a_a'):
+def add_to_recs(samples, namefrom, n):
 	global y_train
 	peaks_list = get_peaks(samples)
 	mapping = {'n' : 0, 'a' : 1, 'e' : 2, 'm' : 3}
 	name = namefrom
 	for i in peaks_list:
-		if name[0] == 'n':
+		if namefrom[0] == 'n':
 			name = 'n' + namefrom
 		else:
 			name = 'a' + namefrom
-		recordings.append(((np.array(samples[i - Cframerate // 2 : i + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
-		recordings.append(((np.array(samples[i + 20 - Cframerate // 2 : i + 20 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
-		recordings.append(((np.array(samples[i - 20 - Cframerate // 2 : i - 20 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
-		recordings.append(((np.array(samples[i + 30 - Cframerate // 2 : i + 30 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
-		recordings.append(((np.array(samples[i - 30 - Cframerate // 2 : i - 30 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
-		
+		recordings.append(((np.array(samples[i - Cframerate : i + Cframerate ])).real, mapping[name[0]]))
+		recordings.append(((np.array(samples[i + 10 - Cframerate : i + 10 + Cframerate ])).real, mapping[name[0]]))
+		recordings.append(((np.array(samples[i - 10 - Cframerate : i - 10 + Cframerate ])).real, mapping[name[0]]))
+		#recordings.append(((np.array(samples[i + 20 - Cframerate : i + 20 + Cframerate ])).real, mapping[name[0]]))
+		#recordings.append(((np.array(samples[i - 20 - Cframerate : i - 20 + Cframerate ])).real, mapping[name[0]]))
+				
 
 def readData():
 	no=0
@@ -90,21 +90,19 @@ def split_data(x_data, y_data):
 	aux = [*zip(x_data,y_data)]
 	np.random.shuffle(aux)
 	x, y = zip(*aux)
-	p = int(len(x_data) * 0.8)
-	q = int(len(x_data) * 0.85)
+	p = int(len(x_data) * 0.9)
+	q = int(len(x_data) * 0.98)
 	return x[ : p], y[ : p], x[p : q], y[p : q], x[q : ], y[q : ]
 
 
 if __name__ == '__main__':
 	readData()
 	# print(np.array_str(np.array(recordings)[:4,0])
-	recordingsDF = pd.DataFrame(data=recordings, columns = ["samples","label","type"])
-	recordingsDF.to_csv("recordings.csv", sep=';')
+	recordingsDF = pd.DataFrame(data=recordings, columns = ["samples","label"])
+	#recordingsDF.to_csv("recordings.csv", sep=';')
 	
 	x = np.stack(recordingsDF['samples'].values, axis=0)
 	y = keras.utils.to_categorical(recordingsDF['label'].values)
-
-	print(recordingsDF['samples'].values[:10])
 
 	x = x[ : , : , np.newaxis]
 	x_train, y_train, x_valid, y_valid, x_test, y_test = map(np.array, split_data(x, y))
@@ -133,5 +131,14 @@ if __name__ == '__main__':
 	score = model.evaluate(x_test, y_test)
 	print('Test loss:', score[0])
 	print('Test accuracy:', score[1]*100)
+
+	def nof(a):
+		return [a.count(it) for it in range(4)]
+
+	print (nof(list(recordingsDF["label"])))
+
+	model.summary()
+
+	model.save('ModelCNNN'+str(score[1])+'.h5')
 
 	# 97,8

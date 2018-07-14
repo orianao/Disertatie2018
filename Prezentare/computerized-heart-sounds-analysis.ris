@@ -1,0 +1,16 @@
+TY - CHAP
+A1 - Debbal, S. M.
+ED - Olkkonen, Hannu
+Y1 - 2011-09-12
+PY - 2011
+T1 - Computerized Heart Sounds Analysis
+N2 - The discrete wavelet transform (DWT) algorithms have a firm position in processing of signals in several areas of research and industry.  As DWT provides both octave-scale frequency and spatial timing of the analyzed signal, it is constantly used to solve and treat more and more advanced problems. The present book: Discrete Wavelet Transforms -  Biomedical Applications reviews the recent progress in discrete wavelet transform algorithms and applications. The book reviews the recent progress in DWT algorithms for biomedical applications. The book covers a wide range of architectures (e.g. lifting, shift invariance, multi-scale analysis) for constructing DWTs. The book chapters are organized into four major parts. Part I describes the progress in implementations of the DWT algorithms in biomedical signal analysis. Applications include compression and filtering of biomedical signals, DWT based selection of salient EEG frequency band, shift invariant DWTs for multiscale analysis and DWT assisted heart sound analysis. Part II addresses speech analysis, modeling and understanding of speech and speaker recognition. Part III focuses biosensor applications such as calibration of enzymatic sensors, multiscale analysis of wireless capsule endoscopy recordings, DWT assisted electronic nose analysis and optical fibre sensor analyses. Finally, Part IV describes DWT algorithms for tools in identification and diagnostics: identification based on hand geometry, identification of species groupings, object detection and tracking, DWT signatures and diagnostics for assessment of ICU agitation-sedation controllers and DWT based diagnostics of power transformers.The chapters of the present book consist of both tutorial and highly advanced material. Therefore, the book is intended to be a reference text for graduate students and researchers to obtain state-of-the-art knowledge on specific applications.
+BT - Discrete Wavelet Transforms
+SP - Ch. 5
+UR - https://doi.org/10.5772/23700
+DO - 10.5772/23700
+SN - 
+PB - InTech
+CY - Rijeka
+Y2 - 2018-06-29
+ER -

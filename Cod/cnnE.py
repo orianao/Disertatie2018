@@ -9,16 +9,20 @@ import audioop
 import keras
 from sklearn.preprocessing import normalize
 from sklearn.model_selection import train_test_split
-from keras.models import Sequential
-from keras.layers import Conv1D, MaxPool1D, GlobalAvgPool1D, Dropout, BatchNormalization, Dense,Flatten
-from keras.optimizers import Adam
-from keras.callbacks import ModelCheckpoint, LearningRateScheduler, EarlyStopping
-from keras.regularizers import l2
-
+from sklearn import tree, ensemble
+from sklearn.metrics import accuracy_score,confusion_matrix
+import graphviz
+# from keras.models import Sequential
+# from keras.layers import Conv1D, MaxPool1D, GlobalAvgPool1D, Dropout, BatchNormalization, Dense,Flatten
+# from keras.optimizers import Adam
+# from keras.callbacks import ModelCheckpoint, LearningRateScheduler, EarlyStopping
+# from keras.regularizers import l2
+from sklearn.externals import joblib
 
 topdir = "heartbeat-sounds"
 exten = '.wav'
-Cframerate = 44100
+Cframerate = 8000
+abel = 1
 
 recordings = []
 
@@ -39,28 +43,64 @@ def get_peaks(samples):
 	sol = []
 	std = np.std(samples)
 	for i in range(len(samples)):
-		if i > Cframerate and i < len(samples) - Cframerate and samples[i] > std * 2.8:
+		if i > (Cframerate + 31) and i < len(samples) - (Cframerate + 31) and samples[i] > std * 2.8:
 			if is_peak(samples[i], samples[i - Cframerate // 5 : i], samples[i + 1 : i + Cframerate // 5]):
 				sol.append(i)
 	return sol
 
 
-def add_to_recs(samples, namefrom, n, dirpath='a_a'):
+def get_all_peaks(samples):
+	sol = []
+	trsh = 8
+	std = np.std(samples)
+	for i in range(len(samples)):
+		if i > Cframerate // trsh and i < len(samples) -Cframerate // trsh and samples[i] > std * 2:
+			if is_peak(samples[i], samples[i - Cframerate // trsh : i], samples[i + 1 : i + Cframerate // trsh]):
+				sol.append(i)
+	return sol
+
+
+def distances(arr):
+	sol = []
+	for i in range(len(arr)-1):
+		sol.append(arr[i+1]-arr[i])
+	return sol
+
+
+def features(arr):
+	sol = []
+	peaks_list = get_all_peaks(arr)
+	dists = []
+	dists = distances (peaks_list)
+	# sol.append(np.mean(dists))
+	# sol.append(np.std(dists))
+	# sol.append(np.mean(peaks_list))
+	# sol.append(np.std(peaks_list))
+	sol.append(np.min(dists))
+	sol.append(np.max(dists))
+	# sol.append(np.min(peaks_list))
+	# sol.append(np.max(peaks_list))
+	sol.append(np.mean(arr))
+	sol.append(np.std(arr))
+	# sol.append(len(peaks_list))
+	return sol
+
+
+def add_to_recs(samples, namefrom, n):
 	global y_train
 	peaks_list = get_peaks(samples)
-	mapping = {'n' : 0, 'a' : 1, 'e' : 2, 'm' : 3}
+	mapping = {'n' : 0, 'm' : 1, 'e' : 2}
 	name = namefrom
 	for i in peaks_list:
-		if name[0] == 'e':
+		if namefrom[0] == 'm':
 			name = 'n' + namefrom
 		else:
-			name = 'a' + namefrom
-		recordings.append(((np.array(samples[i - Cframerate // 2 : i + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
-		recordings.append(((np.array(samples[i + 20 - Cframerate // 2 : i + 20 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
-		recordings.append(((np.array(samples[i - 20 - Cframerate // 2 : i - 20 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
-		recordings.append(((np.array(samples[i + 30 - Cframerate // 2 : i + 30 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
-		recordings.append(((np.array(samples[i - 30 - Cframerate // 2 : i - 30 + Cframerate // 2])).real, mapping[name[0]], dirpath.split('_')[1]))
-		
+			name = 'm' + namefrom
+		if len(get_all_peaks(np.array(samples[i - Cframerate : i + Cframerate ]).real))>1:
+			recordings.append((features((np.array(samples[i - Cframerate : i + Cframerate ])).real), mapping[name[0]]))
+			#recordings.append(features(np.array(samples[i + 10 - Cframerate : i + 10 + Cframerate ]).real), mapping[name[0]])
+			#recordings.append(features(np.array(samples[i - 10 - Cframerate : i - 10 + Cframerate ]).real), mapping[name[0]])
+				
 
 def readData():
 	no=0
@@ -87,51 +127,54 @@ def readData():
 
 
 def split_data(x_data, y_data):
-	aux = [*zip(x_data,y_data)]
+	aux = [*zip(x_data, y_data)]
 	np.random.shuffle(aux)
+
 	x, y = zip(*aux)
-	p = int(len(x_data) * 0.8)
-	q = int(len(x_data) * 0.85)
+
+	p = int(len(x_data) * 0.9)
+	q = int(len(x_data) * 0.95)
+
 	return x[ : p], y[ : p], x[p : q], y[p : q], x[q : ], y[q : ]
 
 
 if __name__ == '__main__':
 	readData()
-	# print(np.array_str(np.array(recordings)[:4,0])
-	recordingsDF = pd.DataFrame(data=recordings, columns = ["samples","label","type"])
-	recordingsDF.to_csv("recordings.csv", sep=';')
+	recordingsDF = pd.DataFrame(data=recordings, columns = ["samples","label"])
 	
 	x = np.stack(recordingsDF['samples'].values, axis=0)
 	y = keras.utils.to_categorical(recordingsDF['label'].values)
 
-	print(recordingsDF['samples'].values[:10])
+	def nof(a):
+		return [a.count(it) for it in range(2)]
 
-	x = x[ : , : , np.newaxis]
-	x_train, y_train, x_valid, y_valid, x_test, y_test = map(np.array, split_data(x, y))
- 
-	model = Sequential()
-	model.add(Conv1D(filters=4, 
-		kernel_size=10, 
-		activation='relu',
-		kernel_regularizer = l2(0.05),
-		input_shape=x_train.shape[1:]))
-	model.add(MaxPool1D(pool_size=5))
-	model.add(Flatten())
-	model.add(Dense(500, activation='relu'))
-	model.add(Dense(100, activation='relu'))
-	model.add(Dense(20, activation='relu'))
-	model.add(Dense(2, activation='softmax'))
+	print (nof(list(recordingsDF["label"])))
 
-	model.compile(optimizer='adam',
-	              loss='binary_crossentropy',
-	              metrics=['accuracy'])
+	clf = tree.DecisionTreeClassifier(min_samples_split=5)
+	clf = clf.fit(np.stack(recordingsDF['samples'].values, axis=0)[abel:], recordingsDF[ 'label' ].values[abel:])
+	joblib.dump(clf, 'filename1.pkl')
+	clf = joblib.load('filename1.pkl') 
+	print(clf.feature_importances_, accuracy_score(clf.predict(np.stack( recordingsDF[ 'samples' ].values, axis=0 )[:abel]), recordingsDF['label'].values[:abel]))
+	print(confusion_matrix(clf.predict(np.stack( recordingsDF[ 'samples' ].values, axis=0 )[:abel]), recordingsDF['label'].values[:abel]))
 
-	model.fit(x_train, y_train,
-	          batch_size=30,
-	          epochs=10,
-	          validation_data=(x_valid, y_valid))
-	score = model.evaluate(x_test, y_test)
-	print('Test loss:', score[0])
-	print('Test accuracy:', score[1]*100)
+	dot_data = tree.export_graphviz(clf, out_file=None)
+	graph = graphviz.Source(dot_data) 
+	graph.render("recs")
 
-	# 100 :o
+	print("RF")
+
+	clf = ensemble.RandomForestClassifier()
+	clf = clf.fit(np.stack(recordingsDF['samples'].values, axis=0)[abel:], recordingsDF[ 'label' ].values[abel:])
+	joblib.dump(clf, 'filename2.pkl')
+	clf = joblib.load('filename2.pkl') 
+	print(clf.feature_importances_, accuracy_score(clf.predict(np.stack( recordingsDF[ 'samples' ].values, axis=0 )[:abel]), recordingsDF['label'].values[:abel]))
+	print(confusion_matrix(clf.predict(np.stack( recordingsDF[ 'samples' ].values, axis=0 )[:abel]), recordingsDF['label'].values[:abel]))
+
+	print("AB")
+
+	clf = ensemble.AdaBoostClassifier()
+	clf = clf.fit(np.stack(recordingsDF['samples'].values, axis=0)[abel:], recordingsDF[ 'label' ].values[abel:])
+	joblib.dump(clf, 'filename3.pkl')
+	clf = joblib.load('filename3.pkl') 
+	print(clf.feature_importances_, accuracy_score(clf.predict(np.stack( recordingsDF[ 'samples' ].values, axis=0 )[:abel]), recordingsDF['label'].values[:abel]))
+	print(confusion_matrix(clf.predict(np.stack( recordingsDF[ 'samples' ].values, axis=0 )[:abel]), recordingsDF['label'].values[:abel]))

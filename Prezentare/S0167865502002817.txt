@@ -1,0 +1,10 @@
+Tamer Ölmez, Zümray Dokur,
+Classification of heart sounds using an artificial neural network,
+Pattern Recognition Letters,
+Volume 24, Issues 1–3,
+2003,
+Pages 617-629,
+ISSN 0167-8655,
+https://doi.org/10.1016/S0167-8655(02)00281-7.
+(http://www.sciencedirect.com/science/article/pii/S0167865502002817)
+Keywords: Heart sounds; Classification of murmurs; Artificial neural network; Segmentation of heart sounds; Wavelet transform

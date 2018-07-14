@@ -1,0 +1,18 @@
+TY  - EJOU
+AU  - Scholkmann, Felix
+AU  - Boss, Jens
+AU  - Wolf, Martin
+TI  - An Efficient Algorithm for Automatic Peak Detection in Noisy Periodic and Quasi-Periodic Signals
+T2  - Algorithms
+
+PY  - 2012
+VL  - 5
+IS  - 4
+SN  - 1999-4893
+
+AB  - We present a new method for automatic detection of peaks in noisy periodic and quasi-periodic signals. The new method, called automatic multiscale-based peak detection (AMPD), is based on the calculation and analysis of the local maxima scalogram, a matrix comprising the scale-dependent occurrences of local maxima. The usefulness of the proposed method is shown by applying the AMPD algorithm to simulated and real-world signals.
+KW  - peak detection
+KW  - local maxima scalogram
+KW  - multiscale local maxima detection
+KW  - automatic multiscale-based peak detection (AMPD) algorithm
+DO  - 10.3390/a5040588

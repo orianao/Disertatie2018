@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.6)  15 JUN 2018 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.6)  6 JUL 2018 19:04
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **the.tex
 (./the.tex
@@ -105,6 +105,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen112
+\extrarowheight=\dimen113
+\NC@list=\toks26
+\extratabsurround=\skip49
+\backup@length=\skip50
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
@@ -113,12 +121,20 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count100
+\float@exts=\toks27
+\float@box=\box28
+\@float@everytoks=\toks28
+\@floatcapt=\box29
+)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks26
+\KV@toks@=\toks29
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
@@ -130,18 +146,18 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count100
-\Gm@cntv=\count101
-\c@Gm@tempcnt=\count102
-\Gm@bindingoffset=\dimen112
-\Gm@wd@mp=\dimen113
-\Gm@odd@mp=\dimen114
-\Gm@even@mp=\dimen115
-\Gm@layoutwidth=\dimen116
-\Gm@layoutheight=\dimen117
-\Gm@layouthoffset=\dimen118
-\Gm@layoutvoffset=\dimen119
-\Gm@dimlist=\toks27
+\Gm@cnth=\count101
+\Gm@cntv=\count102
+\c@Gm@tempcnt=\count103
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks30
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -160,13 +176,213 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen120
-\Gin@req@width=\dimen121
+\Gin@req@height=\dimen122
+\Gin@req@width=\dimen123
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count104
+\lst@gtempboxa=\box30
+\lst@token=\toks31
+\lst@length=\count105
+\lst@currlwidth=\dimen124
+\lst@column=\count106
+\lst@pos=\count107
+\lst@lostspace=\dimen125
+\lst@width=\dimen126
+\lst@newlines=\count108
+\lst@lineno=\count109
+\lst@maxwidth=\dimen127
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count110
+\lst@skipnumbers=\count111
+\lst@framebox=\box31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip51
+\LTright=\skip52
+\LTpre=\skip53
+\LTpost=\skip54
+\LTchunksize=\count112
+\LTcapwidth=\dimen128
+\LT@head=\box32
+\LT@firsthead=\box33
+\LT@foot=\box34
+\LT@lastfoot=\box35
+\LT@cols=\count113
+\LT@rows=\count114
+\c@LT@tables=\count115
+\c@LT@chunks=\count116
+\LT@p@ftn=\toks32
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2017/07/08 v1.3.1 fvextra - extensions and patches for fancyvr
+b
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count118
+\FV@InFile=\read1
+\FV@TabBox=\box36
+\c@FancyVerbLine=\count119
+\FV@StepNumber=\count120
+\FV@OutFile=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count121
+\output=\toks33
+\linenoprevgraf=\count122
+\linenumbersep=\dimen129
+\linenumberwidth=\dimen130
+\c@linenumber=\count123
+\c@pagewiselinenumber=\count124
+\c@LN@truepage=\count125
+\c@internallinenumber=\count126
+\c@internallinenumbers=\count127
+\quotelinenumbersep=\dimen131
+\bframerule=\dimen132
+\bframesep=\dimen133
+\bframebox=\box37
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count128
+\c@FV@TrueTabCounter=\count129
+\FV@TabBox@Group=\box38
+\FV@TmpLength=\skip55
+\c@FV@HighlightLinesStart=\count130
+\c@FV@HighlightLinesStop=\count131
+\FV@LoopCount=\count132
+\FV@NCharsBox=\box39
+\FV@BreakIndent=\dimen134
+\FV@BreakIndentNChars=\count133
+\FV@BreakSymbolSepLeft=\dimen135
+\FV@BreakSymbolSepLeftNChars=\count134
+\FV@BreakSymbolSepRight=\dimen136
+\FV@BreakSymbolSepRightNChars=\count135
+\FV@BreakSymbolIndentLeft=\dimen137
+\FV@BreakSymbolIndentLeftNChars=\count136
+\FV@BreakSymbolIndentRight=\dimen138
+\FV@BreakSymbolIndentRightNChars=\count137
+\c@FancyVerbLineBreakLast=\count138
+\FV@LineBox=\box40
+\FV@LineIndentBox=\box41
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count139
+\calc@Bcount=\count140
+\calc@Adimen=\dimen139
+\calc@Bdimen=\dimen140
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count141
+\calc@Cskip=\skip58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 67.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+)
+runsystem(uname -s > "the.w18")...executed.
+
+ (./the.w18)
+runsystem(rm -- "the.w18")...executed.
+
+) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count142
+\decimalpart=\count143
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip59
+\fb@frw=\dimen141
+\fb@frh=\dimen142
+\FrameRule=\dimen143
+\FrameSep=\dimen144
+)
+\minted@appexistsfile=\read2
+\minted@bgbox=\box42
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count144
+\c@minted@pygmentizecounter=\count145
+\@float@every@listing=\toks34
+\c@listing=\count146
+)
+runsystem(mkdir -p _minted-the)...executed.
+
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks28
-\inpenc@posthook=\toks29
+\inpenc@prehook=\toks35
+\inpenc@posthook=\toks36
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -481,14 +697,14 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-\c@theorem=\count103
-\c@definition=\count104
-\c@lemma=\count105
+\c@theorem=\count147
+\c@definition=\count148
+\c@lemma=\count149
 
 
-Package amsthm Warning: Unknown theoremstyle `proposition' on input line 24.
+Package amsthm Warning: Unknown theoremstyle `proposition' on input line 28.
 
-\c@proposition=\count106
+\c@proposition=\count150
 
 Package geometry Warning: Over-specification in `h'-direction.
     `width' (455.24408pt) is ignored.
@@ -497,6 +713,28 @@ Package geometry Warning: Over-specification in `h'-direction.
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (731.23582pt) is ignored.
 
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+runsystem(which pygmentize && touch the.aex)...executed.
+
+runsystem(rm the.aex)...executed.
+
+
 
 LaTeX Warning: Unused global option(s):
     [a4papper].
@@ -504,18 +742,18 @@ LaTeX Warning: Unused global option(s):
 (./the.aux)
 \openout1 = `the.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -553,58 +791,26 @@ LaTeX Font Info:    ... okay on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
-\scratchdimen=\dimen122
-\scratchbox=\box28
-\nofMPsegments=\count108
-\nofMParguments=\count109
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count110
-\MPscratchDim=\dimen123
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count151
+\scratchdimen=\dimen145
+\scratchbox=\box43
+\nofMPsegments=\count152
+\nofMParguments=\count153
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count154
+\MPscratchDim=\dimen146
+\MPnumerator=\count155
+\makeMPintoPDFobject=\count156
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
@@ -616,18 +822,175 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+\c@lstlisting=\count157
 <Imagini/fii.png, id=1, 200.75pt x 100.375pt>
 File: Imagini/fii.png Graphic file (type png)
 <use Imagini/fii.png>
-Package pdftex.def Info: Imagini/fii.png  used on input line 54.
+Package pdftex.def Info: Imagini/fii.png  used on input line 60.
 (pdftex.def)             Requested size: 200.7495pt x 100.37474pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--88
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--88
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
@@ -635,174 +998,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--88
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Imagini/fii.png>]
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--149
-
- []
-
-[1] (./the.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 160.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 160.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-\tf@toc=\write3
-\openout3 = `the.toc'.
-
- [3
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+) [2]
+Underfull \hbox (badness 10000) in paragraph at lines 178--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 190--197
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--199
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+[1] (./the.toc [5
+
+])
+\tf@toc=\write6
+\openout6 = `the.toc'.
+
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
 
  []
 
-<Imagini/heart.jpg, id=22, 538.1706pt x 295.3434pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
+
+ []
+
+<Imagini/heart.jpg, id=36, 538.1706pt x 295.3434pt>
 File: Imagini/heart.jpg Graphic file (type jpg)
 <use Imagini/heart.jpg>
-Package pdftex.def Info: Imagini/heart.jpg  used on input line 204.
+Package pdftex.def Info: Imagini/heart.jpg  used on input line 276.
 (pdftex.def)             Requested size: 398.33858pt x 218.60927pt.
-[4
+[7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 210--212
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 288--290
 
  []
 
-<Imagini/Wiggers_Diagram_2.png, id=26, 1102.1175pt x 844.15375pt>
+<Imagini/Wiggers_Diagram_2.png, id=40, 1102.1175pt x 844.15375pt>
 File: Imagini/Wiggers_Diagram_2.png Graphic file (type png)
 <use Imagini/Wiggers_Diagram_2.png>
-Package pdftex.def Info: Imagini/Wiggers_Diagram_2.png  used on input line 222.
+Package pdftex.def Info: Imagini/Wiggers_Diagram_2.png  used on input line 294.
 
 (pdftex.def)             Requested size: 426.79134pt x 326.9001pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--235
+Underfull \hbox (badness 10000) in paragraph at lines 298--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--235
+Underfull \hbox (badness 10000) in paragraph at lines 298--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--235
+Underfull \hbox (badness 10000) in paragraph at lines 298--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--235
+Underfull \hbox (badness 10000) in paragraph at lines 298--307
 
  []
 
-[5 <./Imagini/heart.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 236--238
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--246
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--246
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--252
-
- []
-
-[6 <./Imagini/Wiggers_Diagram_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 258--260
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--266
-
- []
-
-<Imagini/challengeresults.png, id=35, 1003.75pt x 606.265pt>
-File: Imagini/challengeresults.png Graphic file (type png)
-<use Imagini/challengeresults.png>
-Package pdftex.def Info: Imagini/challengeresults.png  used on input line 268.
-(pdftex.def)             Requested size: 455.24408pt x 274.97217pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--275
-
- []
-
-[7 <./Imagini/challengeresults.png>] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 290--292
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
-
- []
-
-<Imagini/crisp.png, id=43, 886.31125pt x 805.0075pt>
-File: Imagini/crisp.png Graphic file (type png)
-<use Imagini/crisp.png>
-Package pdftex.def Info: Imagini/crisp.png  used on input line 297.
-(pdftex.def)             Requested size: 227.62204pt x 206.74207pt.
-[9
-
- <./Imagini/crisp.png>]
+[8 <./Imagini/heart.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 308--310
 
  []
@@ -813,106 +1114,845 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--313
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--320
+Underfull \hbox (badness 10000) in paragraph at lines 314--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
+Underfull \hbox (badness 10000) in paragraph at lines 314--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--333
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
+
+ []
+
+[9 <./Imagini/Wiggers_Diagram_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 330--332
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--340
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 347--349
+Underfull \hbox (badness 10000) in paragraph at lines 333--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--352
+Underfull \hbox (badness 10000) in paragraph at lines 336--338
 
  []
 
-<Imagini/crispt.png, id=51, 1256.695pt x 741.77126pt>
+<Imagini/challengeresults.png, id=48, 1003.75pt x 606.265pt>
+File: Imagini/challengeresults.png Graphic file (type png)
+<use Imagini/challengeresults.png>
+Package pdftex.def Info: Imagini/challengeresults.png  used on input line 340.
+(pdftex.def)             Requested size: 455.24408pt x 274.97217pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--350
+
+ []
+
+[10 <./Imagini/challengeresults.png>] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 365--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--370
+
+ []
+
+<Imagini/crisp.png, id=55, 886.31125pt x 805.0075pt>
+File: Imagini/crisp.png Graphic file (type png)
+<use Imagini/crisp.png>
+Package pdftex.def Info: Imagini/crisp.png  used on input line 372.
+(pdftex.def)             Requested size: 227.62204pt x 206.74207pt.
+[12
+
+ <./Imagini/crisp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 383--385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--398
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--405
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--415
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 422--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--427
+
+ []
+
+<Imagini/crispt.png, id=64, 1256.695pt x 741.77126pt>
 File: Imagini/crispt.png Graphic file (type png)
 <use Imagini/crispt.png>
-Package pdftex.def Info: Imagini/crispt.png  used on input line 362.
+Package pdftex.def Info: Imagini/crispt.png  used on input line 437.
 (pdftex.def)             Requested size: 460.93456pt x 272.06287pt.
 
-Overfull \hbox (5.69044pt too wide) in paragraph at lines 362--364
+Overfull \hbox (5.69044pt too wide) in paragraph at lines 437--439
  [][] 
  []
 
-[11 <./Imagini/crispt.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 381--383
+[14 <./Imagini/crispt.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 456--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--386
+Underfull \hbox (badness 10000) in paragraph at lines 459--461
 
  []
 
-[12] [13]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 463.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+Underfull \hbox (badness 10000) in paragraph at lines 462--464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--502
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 509--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--520
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 525.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 463.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 525.
 
-Overfull \hbox (0.41832pt too wide) in paragraph at lines 464--465
-[]\OT1/cmr/m/it/10.95 Autentificarea\OT1/cmr/m/n/10.95 : pro-pri-etatea de a id
-en-ti-fica o en-ti-tate con-form an-u-mi-tor stan-darde. Aceasta
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
+
  []
 
 
-Overfull \hbox (0.82169pt too wide) in paragraph at lines 470--472
-[]\OT1/cmr/m/it/10.95 Integritatea datelor\OT1/cmr/m/n/10.95 : pro-pri-etatea d
-e a evita orice mod-i-fi-care (in-ser-are, ^^Xstergere, substitu[]ie)
+Underfull \hbox (badness 10000) in paragraph at lines 533--535
+
  []
 
-[14
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 541.
 
-] (./the.bbl [15
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 546--548
 
-]) [16
+ []
 
-] (./the.aux) ) 
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
+
+ []
+
+<Imagini/img/beforenorm/normal__106_1306776721273_C2.jpg, id=78, 462.528pt x 34
+6.896pt>
+File: Imagini/img/beforenorm/normal__106_1306776721273_C2.jpg Graphic file (typ
+e jpg)
+<use Imagini/img/beforenorm/normal__106_1306776721273_C2.jpg>
+Package pdftex.def Info: Imagini/img/beforenorm/normal__106_1306776721273_C2.jp
+g  used on input line 577.
+(pdftex.def)             Requested size: 312.9803pt x 234.74811pt.
+<Imagini/img/beforenorm/normal__128_1306344005749_B.jpg, id=79, 462.528pt x 346
+.896pt>
+File: Imagini/img/beforenorm/normal__128_1306344005749_B.jpg Graphic file (type
+ jpg)
+<use Imagini/img/beforenorm/normal__128_1306344005749_B.jpg>
+Package pdftex.def Info: Imagini/img/beforenorm/normal__128_1306344005749_B.jpg
+  used on input line 582.
+(pdftex.def)             Requested size: 312.9803pt x 234.74811pt.
+<Imagini/img/beforenorm/normal_noisynormal_127_1306764300147_D1.jpg, id=80, 462
+.528pt x 346.896pt>
+File: Imagini/img/beforenorm/normal_noisynormal_127_1306764300147_D1.jpg Graphi
+c file (type jpg)
+<use Imagini/img/beforenorm/normal_noisynormal_127_1306764300147_D1.jpg>
+Package pdftex.def Info: Imagini/img/beforenorm/normal_noisynormal_127_13067643
+00147_D1.jpg  used on input line 589.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<Imagini/img/beforenorm/extrastole__209_1308162216750_D.jpg, id=81, 462.528pt x
+ 346.896pt>
+File: Imagini/img/beforenorm/extrastole__209_1308162216750_D.jpg Graphic file (
+type jpg)
+<use Imagini/img/beforenorm/extrastole__209_1308162216750_D.jpg>
+Package pdftex.def Info: Imagini/img/beforenorm/extrastole__209_1308162216750_D
+.jpg  used on input line 594.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<Imagini/img/beforenorm/extrastole__154_1306935608852_D2.jpg, id=82, 462.528pt 
+x 346.896pt>
+File: Imagini/img/beforenorm/extrastole__154_1306935608852_D2.jpg Graphic file 
+(type jpg)
+<use Imagini/img/beforenorm/extrastole__154_1306935608852_D2.jpg>
+Package pdftex.def Info: Imagini/img/beforenorm/extrastole__154_1306935608852_D
+2.jpg  used on input line 599.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+[17 <./Imagini/img/beforenorm/normal__106_1306776721273_C2.jpg> <./Imagini/img/
+beforenorm/normal__128_1306344005749_B.jpg>]
+<Imagini/img/beforenorm/murmur__171_1307971016233_D.jpg, id=86, 462.528pt x 346
+.896pt>
+File: Imagini/img/beforenorm/murmur__171_1307971016233_D.jpg Graphic file (type
+ jpg)
+<use Imagini/img/beforenorm/murmur__171_1307971016233_D.jpg>
+Package pdftex.def Info: Imagini/img/beforenorm/murmur__171_1307971016233_D.jpg
+  used on input line 607.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<Imagini/img/beforenorm/murmur__242_1309197394064_B.jpg, id=87, 462.528pt x 346
+.896pt>
+File: Imagini/img/beforenorm/murmur__242_1309197394064_B.jpg Graphic file (type
+ jpg)
+<use Imagini/img/beforenorm/murmur__242_1309197394064_B.jpg>
+Package pdftex.def Info: Imagini/img/beforenorm/murmur__242_1309197394064_B.jpg
+  used on input line 612.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<Imagini/img/beforenorm/murmur_noisymurmur_162_1307101835989_B_1.jpg, id=88, 46
+2.528pt x 346.896pt>
+File: Imagini/img/beforenorm/murmur_noisymurmur_162_1307101835989_B_1.jpg Graph
+ic file (type jpg)
+<use Imagini/img/beforenorm/murmur_noisymurmur_162_1307101835989_B_1.jpg>
+Package pdftex.def Info: Imagini/img/beforenorm/murmur_noisymurmur_162_13071018
+35989_B_1.jpg  used on input line 617.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+ [18 <./Imagini/img/beforenorm/normal_noisynormal_127_1306764300147_D1.jpg> <./
+Imagini/img/beforenorm/extrastole__209_1308162216750_D.jpg> <./Imagini/img/befo
+renorm/extrastole__154_1306935608852_D2.jpg>] [19 <./Imagini/img/beforenorm/mur
+mur__171_1307971016233_D.jpg> <./Imagini/img/beforenorm/murmur__242_13091973940
+64_B.jpg> <./Imagini/img/beforenorm/murmur_noisymurmur_162_1307101835989_B_1.jp
+g>]
+Underfull \hbox (badness 10000) in paragraph at lines 628--630
+
+ []
+
+\openout3 = `the.pyg'.
+
+(./_minted-the/default-pyg-prefix.pygstyle) (./_minted-the/default.pygstyle)
+(./_minted-the/D44D34D4B549923F47732C0962B3D7624C9AD5D4C0174B2724AA01553771DE33
+.pygtex
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 650--652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--655
+
+ []
+
+<Imagini/n1a.png, id=96, 594.22pt x 452.69125pt>
+File: Imagini/n1a.png Graphic file (type png)
+<use Imagini/n1a.png>
+Package pdftex.def Info: Imagini/n1a.png  used on input line 660.
+(pdftex.def)             Requested size: 256.0748pt x 195.08861pt.
+<Imagini/n1c.png, id=97, 594.22pt x 452.69125pt>
+File: Imagini/n1c.png Graphic file (type png)
+<use Imagini/n1c.png>
+Package pdftex.def Info: Imagini/n1c.png  used on input line 665.
+(pdftex.def)             Requested size: 256.0748pt x 195.08861pt.
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 676--678
+
+ []
+
+[21 <./Imagini/n1a.png> <./Imagini/n1c.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 685--687
+
+ []
+
+\openout3 = `the.pyg'.
+
+
+(./_minted-the/3D8929DA5FC5CD98D72664BC33D6D12A4C9AD5D4C0174B2724AA01553771DE33
+.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 695--697
+
+ []
+
+<Imagini/img/normal__113_1306244002866_D.jpg, id=106, 462.528pt x 346.896pt>
+File: Imagini/img/normal__113_1306244002866_D.jpg Graphic file (type jpg)
+<use Imagini/img/normal__113_1306244002866_D.jpg>
+Package pdftex.def Info: Imagini/img/normal__113_1306244002866_D.jpg  used on i
+nput line 721.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<Imagini/img/beforenorm/normal__113_1306244002866_D.jpg, id=107, 462.528pt x 34
+6.896pt>
+File: Imagini/img/beforenorm/normal__113_1306244002866_D.jpg Graphic file (type
+ jpg)
+<use Imagini/img/beforenorm/normal__113_1306244002866_D.jpg>
+Package pdftex.def Info: Imagini/img/beforenorm/normal__113_1306244002866_D.jpg
+  used on input line 726.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 738--740
+
+ []
+
+<Imagini/sw.jpg, id=116, 618.31pt x 447.6725pt>
+File: Imagini/sw.jpg Graphic file (type jpg)
+<use Imagini/sw.jpg>
+Package pdftex.def Info: Imagini/sw.jpg  used on input line 745.
+(pdftex.def)             Requested size: 256.0748pt x 185.41174pt.
+[23 <./Imagini/img/normal__113_1306244002866_D.jpg> <./Imagini/img/beforenorm/n
+ormal__113_1306244002866_D.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 757--759
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 760--762
+
+ []
+
+\openout3 = `the.pyg'.
+
+
+(./_minted-the/BF107A052DBC3AC1FD89263B1CE506A74C9AD5D4C0174B2724AA01553771DE33
+.pygtex [24 <./Imagini/sw.jpg>])
+Underfull \hbox (badness 10000) in paragraph at lines 784--786
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 793--793
+[]|\OT1/cmr/m/n/10.95 Peak Fre-quency
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 793--793
+\OT1/cmr/m/n/10.95 Stan-dard De-vi-a-
+ []
+
+
+Underfull \hbox (badness 7326) in paragraph at lines 797--797
+[]|\OT1/cmr/m/n/10.95 Peak Am-pli-tude
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 797--797
+\OT1/cmr/m/n/10.95 Stan-dard De-vi-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+[]|\OT1/cmr/m/n/10.95 Minimum Peak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+[]|\OT1/cmr/m/n/10.95 Maximum Peak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 803--803
+[]|\OT1/cmr/m/n/10.95 Minimum Peak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+[]|\OT1/cmr/m/n/10.95 Maximum Peak
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 809--809
+[]|\OT1/cmr/m/n/10.95 Standard De-vi-a-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 815
+ []
+
+[25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 834--836
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 837--839
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 840--842
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 843--845
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 846--848
+
+ []
+
+\openout3 = `the.pyg'.
+
+
+(./_minted-the/6090353A493CD32C76663E910CDE69974C9AD5D4C0174B2724AA01553771DE33
+.pygtex [27])
+Underfull \hbox (badness 10000) in paragraph at lines 878--880
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--890
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 891--893
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 894--896
+
+ []
+
+\openout3 = `the.pyg'.
+
+
+(./_minted-the/9510DAD43A10F48936C03EA6C3FC930B4C9AD5D4C0174B2724AA01553771DE33
+.pygtex [28])
+Underfull \hbox (badness 10000) in paragraph at lines 929--931
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--934
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 935--937
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 938--944
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 938--944
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 938--944
+
+ []
+
+\openout3 = `the.pyg'.
+
+
+(./_minted-the/ABD438E7565B8CA1B0592B6600432EA84C9AD5D4C0174B2724AA01553771DE33
+.pygtex [29])
+Underfull \hbox (badness 10000) in paragraph at lines 973--975
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 976--978
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 990--992
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--1000
+
+ []
+
+<Imagini/wav-sound-format.png, id=144, 614.295pt x 569.12625pt>
+File: Imagini/wav-sound-format.png Graphic file (type png)
+<use Imagini/wav-sound-format.png>
+Package pdftex.def Info: Imagini/wav-sound-format.png  used on input line 1005.
+
+(pdftex.def)             Requested size: 227.62204pt x 210.88605pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1018
+
+ []
+
+[31 <./Imagini/wav-sound-format.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1019--1021
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1029
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1040
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1048
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1051
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1059--1061
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1064
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1067
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1070
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1078
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1081
+[]|\OT1/cmr/m/n/10.95 Random
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1082
+[]|\OT1/cmr/m/n/10.95 AdaBoost
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1085
+[]|\OT1/cmr/m/n/10.95 Peak Fre-quency
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1089--1089
+[]|\OT1/cmr/m/n/10.95 Peak Am-pli-tude
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1093--1093
+[]|\OT1/cmr/m/n/10.95 Maximum Peak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1095
+[]|\OT1/cmr/m/n/10.95 Minimum Peak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1097
+[]|\OT1/cmr/m/n/10.95 Maximum Peak
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1107
+ []
+
+[33
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1123
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 1132--1134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1141--1143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1144--1146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1153--1155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1161--1163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1178
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1195--1197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1201--1203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1215--1217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1218--1220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1226
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1237
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 1247--1249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1250--1252
+
+ []
+
+[38
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1263
+[]\OT1/cmr/m/n/10.95 The PAS-CAL Clas-si-fy-ing Heart Sounds Chal-lenge 2011, B
+ent-ley
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1263
+\OT1/cmr/m/n/10.95 P. and Nordehn G. and Coim-bra M. and Man-nor S. Avail-able:
+
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 1264--1265
+[]\OT1/cmr/m/n/10.95 Tison GH, Sanchez JM, Ballinger B, et al. Pas-sive De-tec-
+tion of Atrial Fib-ril-la-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1267
+[]\OT1/cmr/m/n/10.95 Lumen Learn-ing. Bi-ol-ogy for Ma-jors II https://courses.
+lumenlearning.com/wm-
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 1276--1277
+[]\OT1/cmr/m/n/10.95 Tamer []Olmez, Z^^?umray Dokur, Clas-si-fi-ca-tion of hear
+t sounds us-ing an ar-ti-fi-
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 1276--1277
+\OT1/cmr/m/n/10.95 cial neu-ral net-work, Pat-tern Recog-ni-tion Let-ters, Vol-
+ume 24, Is-sues 1{3, 2003,
+ []
+
+[39
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1289
+[]\OT1/cmr/m/n/10.95 Weisstein, Eric W. L2-Norm. From MathWorld--A Wol-fram Web
+ Re-source.
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 1290--1291
+[]\OT1/cmr/m/n/10.95 Weisstein, Eric W. Vec-tor Norm. From MathWorld--A Wol-fra
+m Web Re-source.
+ []
+
+
+Underfull \hbox (badness 4582) in paragraph at lines 1292--1293
+[]\OT1/cmr/m/n/10.95 Scholkmann, Fe-lix and Boss, Jens and Wolf, Mar-tin An Ef-
+fi-cient Al-go-rithm
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 1292--1293
+\OT1/cmr/m/n/10.95 for Au-to-matic Peak De-tec-tion in Noisy Pe-ri-odic and Qua
+si-Periodic Sig-nals 2012
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1299
+[]\OT1/cmr/m/n/10.95 Guy Amit, Noam Gavriely, Nathan In-tra-tor, Clus-ter anal-
+y-sis and clas-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1299
+\OT1/cmr/m/n/10.95 si-fi-ca-tion of heart sounds, Biomed-i-cal Sig-nal Pro-cess
+-ing and Con-trol,2009,
+ []
+
+[40] (./the.aux)
+runsystem(rm the.pyg)...executed.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3391 strings out of 494880
- 43679 string characters out of 6179602
- 105227 words of memory out of 5000000
- 6630 multiletter control sequences out of 15000+600000
- 13220 words of font info for 48 fonts, out of 8000000 for 9000
+ 9184 strings out of 494880
+ 143103 string characters out of 6179602
+ 265378 words of memory out of 5000000
+ 12284 multiletter control sequences out of 15000+600000
+ 13910 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,5n,28p,700b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on the.pdf (17 pages, 1027570 bytes).
+ 37i,14n,35p,1686b,1345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/oriana/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.60
+0pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on the.pdf (41 pages, 1858364 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 236 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

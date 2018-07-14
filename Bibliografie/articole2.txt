@@ -1,0 +1,36 @@
+http://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+https://www.macrumors.com/2018/03/21/apple-watch-abnormal-heart-rhythm/
+https://courses.lumenlearning.com/wm-biology2/chapter/the-cardiac-cycle/
+https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/1223/2017/02/08205514/Figure_40_03_03.jpg
+https://en.wikipedia.org/wiki/Cardiac_cycle
+https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wiggers_Diagram_2.svg/1098px-Wiggers_Diagram_2.svg.png
+https://en.wikipedia.org/wiki/Heart_murmur
+https://en.wikipedia.org/wiki/Heart_arrhythmia
+https://www.kaggle.com/kinguistics/heartbeat-sounds/kernels
+https://www.the-modeling-agency.com/crisp-dm.pdf
+Data desc
+https://www.lifewire.com/wav-wave-files-2622395
+http://soundfile.sapp.org/doc/WaveFormat/
+L2
+http://mathworld.wolfram.com/VectorNorm.html
+http://mathworld.wolfram.com/L2-Norm.html
+http://www.math.uaic.ro/~oniciucc/depozit/dfcs1.pdf
+https://en.wikipedia.org/wiki/Norm_(mathematics)
+Sliding window
+
+Peak detection
+https://www.mathworks.com/help/signal/examples/peak-analysis.html
+algorithms-05-00588.pdf
+
+Features
+https://www.researchgate.net/post/what_is_feature_extraction_how_it_used_in_signal_processing_example_signal_is_EEG
+https://pdfs.semanticscholar.org/73a7/3eb140b1f7b496f801d697174392c172c55c.pdf
+
+wav
+http://soundfile.sapp.org/doc/WaveFormat/
+
+sliding window
+https://www.techopedia.com/definition/869/sliding-window
+
+CNN
+http://www.nvidia.com/content/tesla/pdf/machine-learning/imagenet-classification-with-deep-convolutional-nn.pdf

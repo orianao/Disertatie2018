@@ -1,0 +1,28 @@
+Slide 1
+Buna ziua!
+Ma numesc Oniciuc Oriana-Maria si va voi prezenta astazi A model for heart sounds segmentation and classification using neural networks sub coordonarea domnului Conf. dr. Liviu Ciortuz. 
+In proiectul nostru am antrenat 2 clasificatori care separa inregistrari de batai de inimi in sanatoase si bolnave (cu murmur sau extrasistole).
+
+Slide 2
+Cea mai mare cauza de deces in lume sunt bolile cardiovasculare, deci studiile in acest domeniu au un impact major in viata de zi cu zi. 
+
+Slide 3
+Inima, e organul principal al sistemului circulator. Sunt numeroase masuratorile pe care le putem face asupra acesteia pentru a detecta posibile boli, iar noi vom analiza phonocardiogramele (adica inregistrari asupra sunetelor pe care inima le produce). Putem observa in dreapta jos ca cele 2 sunete principale se produc la inchiderea valvelor dintre atrii si ventricule. Prin ascultarea inimii putem sa identificam murmurul sau prezenta extra sistolelor.
+
+Slide 4
+Ce ne dorim sa obtinem e un clasificator care sa ne prezica cu o rata cat mai mare daca o persoana prezinta murmur sau extrasistole utilizand doar PCG.
+Datele pe care le-am folosit au fost prezentate in 2012 intr-un challenge si reprezinta 585 de inregistrari wav. Inregistrarile au fost preluate in 2 dataseturi diferite, in datasetul A prin inregistrari facute cu ajutorul unei aplicatii mobile iStethoscope, iar datasetul B a fost preluat dintr-un studiu clinic, inregistrarile fiind facute in spital. Toate fisierele au durate diferite, de la o sec pana la 30 de secunde. De asemenea si frecventele sunt diferite in cele 2 dataseturi: 44 100 Hz si 4 000 Hz; iar pentru aceasta am adus toate inregistrarile la o frecventa medie, de 16 000 Hz. Datele sunt impartite in 3 clase: normal, cu murmur sau cu extrasistole.
+
+Slide 5
+Rezultatele obtinute de cele mai bune 3 echipe in cadrul challengului sunt prezentate in acest tabel. Rezultatele cu care ne vom compara sunt cele subliniate.
+
+Slide 6
+Dupa 2012, alte rezultate obtinute sunt cele prezentate aici. Masurile prezentate de primele 2 articole sunt putin diferite fata de cele evaluate in cadrul challengeului.
+
+Slide 7
+In continuare va voi prezenta pasii pe care i-am facut in procesarea inregistrarilor pentru inputul clasificatorilor.
+
+Slide 8
+Aflarea pozitiei in timp a fiecarei batai a inimii am facut-o utilizand un algoritm de peak detection. Am luat un interval de 0.2 secunde in care am considerat ca pozitia unei batai a inimii va fi reprezentata de maximul din acest interval. Dar daca am muta sectiunea de 0.2 secunde intre 2 batai succesive atunci am putea interpreta ca bataie de inima un maxim gresit. De aceea am adaugat inca o conditie si anume ca pentru a salva ca bataie de inima un peak, amplitudinea acestuia trebuie sa depaseasca valoarea de 2.8 * stdev(rec).
+A doua etapa a procesarii a reprezentat normalizarea datelor. Am calculat normal L2 pentru fiecare inregristrare si am impartit toate valorile la aceasta. Astfel am obtinut zona de noise in intervalul [-1, 1].
+Pentru a avea un input uniform pentru modelel noastre, am ales sa taiem din fiecare inregistrare ferestre de cate o secunda centrate in peakurile detectate anterior.

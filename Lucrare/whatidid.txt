@@ -1,2 +1,2 @@
-- am schimbat framerateul de la unele fisiere ai sa corespunda cu framerateul min existent in baza de date (de la 44100 la 4000)
-
+- am schimbat framerateul de la unele fisiere ai sa corespunda cu framerateul max existent in baza de date (de la 44100 la 4000)
+ffmpeg
